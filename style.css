@@ -1,3 +1,138 @@
 body {
   background-color: white;
+  font-family: 'Poppins',sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bar {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  height: 52px;
+  left: 0px;
+  align-items:center;
+  top: 0px;
+  background: #3C3A39;
+}
+
+.box {
+  justify-content: baseline;
+  color:white;
+  width: 100%;
+}
+
+.logo {
+  padding-left: 15px;
+}
+
+.menu-icon {
+  text-align: right;
+  padding-right: 15px;
+  font-size: 25px;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 70px 24px;
+  gap: 12px;
+  position: absolute;
+  width:auto;
+  height: 590px;
+  left: 0px;
+  top: 52px;
+  background: #1C1A19;
+  background-image:url(figma.png);
+  background-position:right;
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y:80%;
+}
+
+.intro .main-text {
+  width:auto;
+  height: 90px;
+  font-family: 'Crete Round';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 50px;
+  letter-spacing: 0.37px;
+  color: #FF6B00;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.supporting-text {
+  width:auto;
+  margin: 20px 0px 0px;
+  height: 27px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  color: #FFF5E1;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.description {
+  width:auto;
+  margin: 0px;
+  height: 173px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 24px;
+  color: #FFFFFF;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.address {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  width: 200px;
+  height: 40px;
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+}
+
+.normal-button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.icon-link {
+  width: 24px;
+  height: 24px;
+  flex: none;
+  order: 0;
+  text-align: center;
+  flex-grow: 0;
+  font-size: 25px;;
+  color: white;
 }
