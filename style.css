@@ -1,6 +1,6 @@
 body {
   background-color: white;
-  font-family: 'Poppins',sans-serif;
+  font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
 }
 
@@ -13,15 +13,15 @@ a {
   width: 100%;
   display: flex;
   height: 52px;
-  left: 0px;
-  align-items:center;
-  top: 0px;
-  background: #3C3A39;
+  left: 0;
+  align-items: center;
+  top: 0;
+  background: #3c3a39;
 }
 
 .box {
   justify-content: baseline;
-  color:white;
+  color: white;
   width: 100%;
 }
 
@@ -42,60 +42,60 @@ a {
   padding: 70px 24px;
   gap: 12px;
   position: absolute;
-  width:auto;
+  width: auto;
   height: 590px;
-  left: 0px;
+  left: 0;
   top: 52px;
-  background: #1C1A19;
-  background-image:url(figma.png);
-  background-position:right;
+  background: #1c1a19;
+  background-image: url(figma.png);
+  background-position: right;
   background-repeat: no-repeat;
   background-position-x: 100%;
-  background-position-y:80%;
+  background-position-y: 80%;
 }
 
 .intro .main-text {
-  width:auto;
+  width: auto;
   height: 90px;
-  font-family: 'Crete Round';
+  font-family: sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 50px;
   line-height: 50px;
   letter-spacing: 0.37px;
-  color: #FF6B00;
+  color: #ff6b00;
   flex: none;
   order: 0;
   flex-grow: 0;
 }
 
 .supporting-text {
-  width:auto;
-  margin: 20px 0px 0px;
+  width: auto;
+  margin: 20px 0 0;
   height: 27px;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
   display: flex;
   align-items: center;
-  color: #FFF5E1;
+  color: #fff5e1;
   flex: none;
   order: 1;
   flex-grow: 0;
 }
 
 .description {
-  width:auto;
-  margin: 0px;
+  width: auto;
+  margin: 0;
   height: 173px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 19px;
   line-height: 24px;
-  color: #FFFFFF;
+  color: #fff;
   flex: none;
   order: 2;
   flex-grow: 0;
@@ -105,7 +105,7 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   width: 200px;
   height: 40px;
   flex: none;
@@ -133,6 +133,6 @@ a {
   order: 0;
   text-align: center;
   flex-grow: 0;
-  font-size: 25px;;
+  font-size: 25px;
   color: white;
 }
