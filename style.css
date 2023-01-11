@@ -28,6 +28,11 @@
 
   .logo {
     padding-left: 15px;
+    color: white;
+  }
+
+  #logo-link{
+    color:white;
   }
 
   .menu-icon {
@@ -125,6 +130,11 @@
     flex: none;
     order: 0;
     flex-grow: 0;
+  }
+
+  .normal-button:hover{
+    background-color: orangered;
+    color: #fff;
   }
 
   .icon-link {
