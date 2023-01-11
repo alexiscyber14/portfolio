@@ -123,8 +123,19 @@
     flex-grow: 0;
   }
 
+  .social-links-ul {
+    display: flex;
+    margin: -40px 0 0;
+    padding: 0;
+  }
+
+  .social-links-ul li {
+    list-style: none;
+  }
+
   .normal-button {
     display: flex;
+    margin-left: 2px;
     flex-direction: row;
     align-items: flex-start;
     padding: 8px;
@@ -148,6 +159,7 @@
     order: 0;
     text-align: center;
     flex-grow: 0;
+    padding-left: 6px;
     font-size: 25px;
     color: white;
   }
