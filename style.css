@@ -174,7 +174,9 @@
     order: 0;
     flex-grow: 0;
   }
-
+.line2{
+  width:93%; margin-left: 15px; position: absolute;color: white;top: 600px; height: 2px; background-color: white;
+}
   .work-details article {
     width: 100%;
     height: 147px;
