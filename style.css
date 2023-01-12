@@ -153,6 +153,18 @@
   }
 
   .welcome .intro p {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    color: #fff;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+  }
+
+  .welcome .intro .help-text {
     margin: 20px 0 0;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -379,6 +391,8 @@
   .card-content ul li a:hover {
     color: white;
   }
+
+
 
   .welcome .intro address {
     display: flex;
