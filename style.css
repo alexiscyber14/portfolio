@@ -323,31 +323,19 @@
     align-items: center;
     padding: 12px 0;
     width: auto;
-    height: 48px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-  }
-
-  .skill-wrapper ul li a {
-    width: auto;
+    list-style: none;
     height: 24px;
+    flex: none;
     font-family: 'Inter', 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 22px;
-    line-height: 43px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #fff;
-    flex: none;
+    font-size: 27px;
     text-transform: capitalize;
-    text-decoration: none;
+    color: #fff;
+    line-height: 43px;
     order: 0;
     flex-grow: 0;
   }
-
   .card-content ul li {
     display: flex;
     flex-direction: row;
