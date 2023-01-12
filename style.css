@@ -441,9 +441,6 @@
     background-color: orange;
   }
 
-  /* end welcome section css */
-
-  /* MY works section css */
   .works {
     background-color: white;
     height: 1000px;
@@ -614,10 +611,7 @@
     background: #ff6b00;
   }
 
-  .card-content .card-button .c-button {/*
-      disply: flex;
-      flex-dirction: row; */
-
+  .card-content .card-button .c-button {
     align-items: center;
     padding: 12px;
     gap: 10px;
@@ -637,9 +631,6 @@
     background: #ff6b00;
   }
 
-  /* end works section css */
-
-  /* about me section */
   .me {
     position: absolute;
     width: 100%;
@@ -768,11 +759,6 @@
     flex-grow: 0;
   }
 
-
-
-  /* end about me section */
-
-  /* contact section csss */
   .contact {
     display: flex;
     flex-direction: column;
@@ -819,6 +805,7 @@
     width: 90%;
     height: 40px;
     flex: none;
+    border: 1px solid grey;
     order: 0;
     flex-grow: 0;
   }
@@ -828,6 +815,7 @@
     height: 114px;
     flex: none;
     order: 2;
+    border: 1px solid grey;
     flex-grow: 0;
   }
 
@@ -865,9 +853,7 @@
     flex-grow: 0;
   }
 
-  /* end contact section css */
 
-  /* footer section css */
 
   footer {
     position: absolute;
@@ -878,10 +864,6 @@
     top: 6500px;
     bottom: 0;
   }
-
-
-
-  /* end footer section css */
 }
 
 @media only screen and (min-width: 768px) {
