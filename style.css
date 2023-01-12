@@ -109,6 +109,49 @@
     flex-grow: 0;
   }
 
+  .about-me p {
+    width: 90%;
+    margin-left: 10px;
+    height: 148px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    color: #f4f5f7;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  .work-details p {
+    width: 100%;
+    height: 147px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #091e42;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  .card-content p {
+    width: 90%;
+    margin: 10px;
+    font-family: 'Inter', 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    color: #fff;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+  }
+
   .welcome .intro p {
     margin: 20px 0 0;
     font-family: 'Roboto', sans-serif;
@@ -120,21 +163,6 @@
     padding-top: 10px;
     align-items: center;
     color: #fff5e1;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-  }
-
-  .about-me p {
-    width: 90%;
-    margin-left: 10px;
-    height: 148px;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 24px;
-    color: #f4f5f7;
     flex: none;
     order: 1;
     flex-grow: 0;
@@ -174,21 +202,15 @@
     order: 0;
     flex-grow: 0;
   }
-.line2{
-  width:93%; margin-left: 15px; position: absolute;color: white;top: 600px; height: 2px; background-color: white;
-}
-  .work-details p {
-    width: 100%;
-    height: 147px;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #091e42;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
+
+  .line2 {
+    width: 93%;
+    margin-left: 15px;
+    position: absolute;
+    color: white;
+    top: 600px;
+    height: 2px;
+    background-color: white;
   }
 
   footer ul {
@@ -278,20 +300,6 @@
     flex-grow: 0;
   }
 
-  .card-content p {
-    width: 90%;
-    margin: 10px;
-    font-family: 'Inter', 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 24px;
-    color: #fff;
-    flex: none;
-    order: 2;
-    flex-grow: 0;
-  }
-
   .card-content ul {
     display: flex;
     flex-direction: row;
@@ -336,6 +344,7 @@
     order: 0;
     flex-grow: 0;
   }
+
   .card-content ul li {
     display: flex;
     flex-direction: row;
@@ -369,18 +378,6 @@
 
   .card-content ul li a:hover {
     color: white;
-  }
-
-  .welcome .intro p {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    color: #fff;
-    flex: none;
-    order: 2;
-    flex-grow: 0;
   }
 
   .welcome .intro address {
@@ -483,11 +480,13 @@
 
   .image-placeholder {
     width: 100%;
-    height:auto;
+    height: auto;
     flex: none;
     order: 0;
     flex-grow: 0;
-  }.image-placeholder img{
+  }
+
+  .image-placeholder img {
     width: 100%;
   }
 
