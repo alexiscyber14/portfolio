@@ -482,13 +482,12 @@
 
   .image-placeholder {
     width: 100%;
-    height: 237px;
-    background-image: url(place.png);
-    background-repeat: no-repeat;
-    background-size: contain;
+    height:auto;
     flex: none;
     order: 0;
     flex-grow: 0;
+  }.image-placeholder img{
+    width: 100%;
   }
 
   .work-details {
