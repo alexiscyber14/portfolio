@@ -125,7 +125,7 @@
     flex-grow: 0;
   }
 
-  .about-me article {
+  .about-me p {
     width: 90%;
     margin-left: 10px;
     height: 148px;
@@ -177,7 +177,7 @@
 .line2{
   width:93%; margin-left: 15px; position: absolute;color: white;top: 600px; height: 2px; background-color: white;
 }
-  .work-details article {
+  .work-details p {
     width: 100%;
     height: 147px;
     font-family: 'Inter', sans-serif;
@@ -278,7 +278,7 @@
     flex-grow: 0;
   }
 
-  .card-content article {
+  .card-content p {
     width: 90%;
     margin: 10px;
     font-family: 'Inter', 'Poppins', sans-serif;
@@ -371,7 +371,7 @@
     color: white;
   }
 
-  .welcome .intro article {
+  .welcome .intro p {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
