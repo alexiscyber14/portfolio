@@ -812,7 +812,10 @@
     width: 90%;
     height: 40px;
     flex: none;
-    border: 1px solid grey;
+    border:1px  solid grey;
+    border-top: none;
+    border-left: none;
+    border-right: none;
     order: 0;
     flex-grow: 0;
   }
@@ -824,6 +827,7 @@
     order: 2;
     border: 1px solid grey;
     flex-grow: 0;
+    background-color: rgba(250, 248, 244, 0.808);
   }
 
   #submit {
@@ -865,6 +869,7 @@
     top: 6500px;
     bottom: 0;
   }
+
 }
 
 @media only screen and (min-width: 768px) {
