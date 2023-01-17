@@ -954,27 +954,29 @@
 
   /* welcome section css */
   .welcome {
-    height: 580px;
+    height: 780px;
     background: #1c1a19;
-    background-image: url(figma.png);
+    background-image: url(maxim.png);
     background-position: right;
     background-repeat: no-repeat;
     background-position-x: 100%;
-    background-position-y: 100%;
+    background-position-y: 70%;
   }
 
   .welcome .intro {
-    padding: 0 5% 0;
+    padding: 6% 12% 0;
+    width: 50%;
   }
 
   .welcome .intro h1 {
     padding-top: 50px;
+    width: 100%;
     font-family: sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 60px;
     margin: 0;
-    line-height: 40px;
+    line-height: 81px;
     letter-spacing: 0.37px;
     color: #ff6b00;
   }
@@ -1044,7 +1046,8 @@
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 15px;
+    width: 90%;
+    font-size: 20px;
     color: #fff;
     flex: none;
     order: 2;
@@ -1280,19 +1283,15 @@
   }
 
   .welcome .intro address {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     padding: 0;
-    width: 200px;
-    height: 40px;
-    flex: none;
-    order: 3;
-    flex-grow: 0;
+    float: left;
+    position: absolute;
+    top: 200px;
+    left: 20px;
   }
 
   .welcome .intro address ul {
-    display: flex;
+    display:block;
     padding: 0;
     margin-top: 60px;
   }
