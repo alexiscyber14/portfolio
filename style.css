@@ -41,7 +41,7 @@
   .logo a {
     text-decoration: none;
     color: white;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
   }
 
   #logo-link {
@@ -78,7 +78,7 @@
   }
 
   .welcome .intro {
-    padding: 0 5%  0;
+    padding: 0 5% 0;
   }
 
   .welcome .intro h1 {
@@ -97,7 +97,7 @@
     width: 90%;
     margin: 10px;
     height: 216px;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -113,7 +113,7 @@
     width: 90%;
     margin-left: 10px;
     height: 148px;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 17px;
@@ -127,7 +127,7 @@
   .work-details p {
     width: 100%;
     height: 147px;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
     margin-top: -30px;
@@ -142,7 +142,7 @@
   .card-content p {
     width: 90%;
     margin: 10px;
-    font-family: 'Inter', 'Poppins', sans-serif;
+    font-family: "Inter", "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 17px;
@@ -155,7 +155,7 @@
 
   .welcome .intro p {
     margin: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -167,7 +167,7 @@
 
   .welcome .intro .help-text {
     margin: 20px 0 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -199,7 +199,7 @@
 
   .about-me button a {
     height: 24px;
-    font-family: 'Inter', 'Poppins', sans-serif;
+    font-family: "Inter", "Poppins", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 17px;
@@ -282,7 +282,7 @@
 
   .work-details button a {
     height: 24px;
-    font-family: 'Inter', 'Poppins', sans-serif;
+    font-family: "Inter", "Poppins", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 17px;
@@ -301,7 +301,7 @@
   .work-details ul li a {
     width: auto;
     height: 20px;
-    font-family: 'Inter', 'Poppins', sans-serif;
+    font-family: "Inter", "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -347,7 +347,7 @@
     list-style: none;
     height: 24px;
     flex: none;
-    font-family: 'Inter', 'Poppins', sans-serif;
+    font-family: "Inter", "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 27px;
@@ -379,7 +379,7 @@
     width: auto;
     text-decoration: none;
     height: 20px;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -457,7 +457,7 @@
   }
 
   .work-intro h2 {
-    font-family: 'Crete Round', sans-serif;
+    font-family: "Crete Round", sans-serif;
     font-style: normal;
     width: 100%;
     text-transform: capitalize;
@@ -518,7 +518,7 @@
   .work-details h3 {
     width: 100%;
     height: 36px;
-    font-family: 'Crete Round', 'Poppins', sans-serif;
+    font-family: "Crete Round", "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
@@ -570,8 +570,11 @@
     height: 436px;
     position: relative;
     flex: none;
-    background:
-      linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%),
+    background: linear-gradient(
+        180.45deg,
+        rgba(38, 38, 38, 0) 0.75%,
+        rgba(38, 38, 38, 0.9) 61.94%
+      ),
       url(web.jpg);
     background-position: cover;
     order: 0;
@@ -593,7 +596,7 @@
   .card-content h3 {
     width: 100%;
     height: 81px;
-    font-family: 'Crete Round', 'Poppins', sans-serif;
+    font-family: "Crete Round", "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
@@ -666,7 +669,7 @@
   .about-me h4 {
     width: 90%;
     height: 79px;
-    font-family: 'Crete Round', sans-serif;
+    font-family: "Crete Round", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 62px;
@@ -750,7 +753,7 @@
   .skill-head h4 {
     width: 100%;
     height: 24px;
-    font-family: 'InaiMathi', sans-serif;
+    font-family: "InaiMathi", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -824,23 +827,19 @@
   }
 
   #submit {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
     width: 131px;
     height: 48px;
     background: #ff6b00;
-    flex: none;
     order: 3;
     border: none;
-    flex-grow: 0;
+    text-align: center;
+    color: #fff;
   }
 
   #submit a {
     width: auto;
     height: 24px;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 17px;
