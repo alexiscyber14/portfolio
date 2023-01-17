@@ -570,12 +570,7 @@
     height: 436px;
     position: relative;
     flex: none;
-    background: linear-gradient(
-        180.45deg,
-        rgba(38, 38, 38, 0) 0.75%,
-        rgba(38, 38, 38, 0.9) 61.94%
-      ),
-      url(web.jpg);
+    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(web.jpg);
     background-position: cover;
     order: 0;
     flex-grow: 0;
@@ -812,7 +807,7 @@
     width: 90%;
     height: 40px;
     flex: none;
-    border:1px  solid grey;
+    border: 1px  solid grey;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -840,7 +835,7 @@
     color: #fff;
   }
 
-  #submit:hover{
+  #submit:hover {
     background-color: red;
     color: white;
   }
@@ -854,7 +849,6 @@
     top: 6500px;
     bottom: 0;
   }
-
 }
 
 @media only screen and (min-width: 768px) {
