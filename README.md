@@ -204,7 +204,7 @@ I would like to thank...
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
-<p>see license here<a href="/alexiscyber14/portfolio/main/LICENSE.md">license</a></p>
+This project is [MIT] (./LICENSE) licensed.
+<p>see license here <a href="/alexiscyber14/portfolio/LICENSE.md">license</a></p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
