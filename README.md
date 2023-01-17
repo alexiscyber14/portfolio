@@ -142,8 +142,12 @@ Heroku, Railway, Github, and any host of your choice
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/alexiscyber14)
+- GitHub: [@alexiscyber14](https://github.com/alexiscyber14)
 - LinkedIn: [LinkedIn](linkedin.com/in/alex-ssenyondo-107056259)
+
+**Author2**
+
+- GitHub: [@AmineD931](https://github.com/AmineDerbal)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
