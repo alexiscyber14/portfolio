@@ -929,7 +929,7 @@
 
   .max-menu ul {
     display: flex;
-    width: 80%;
+    width: 100%;
     flex-direction: row;
     align-items: center;
   }
@@ -951,7 +951,7 @@
 
   .max-menu ul li {
     list-style: none;
-    width: 100%;
+    width: 15%;
     text-align: center;
     font-size: 15px;
     margin-right: 2%;
