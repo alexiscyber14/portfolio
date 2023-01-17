@@ -1006,6 +1006,10 @@
     margin-bottom: 10px;
   }
 
+  .work-details ul li:hover {
+    background-color: #ff6b00;
+  }
+
   .max-menu ul li:hover {
     background-color: red;
     color: white;
@@ -1240,6 +1244,28 @@
     flex-grow: 0;
   }
 
+  .card-content ul li a {
+    width: auto;
+    text-decoration: none;
+    height: 20px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #fff;
+    flex: none;
+    flex-grow: 0;
+  }
+
+  .work-details button:hover a {
+    color: #ff6b00;
+  }
+
+  .work-details ul li a:hover {
+    color: white;
+  }
+
   .card-content ul {
     display: flex;
     flex-direction: row;
@@ -1278,20 +1304,6 @@
   .card-content ul li:hover {
     background-color: orange;
     color: white;
-  }
-
-  .card-content ul li a {
-    width: auto;
-    text-decoration: none;
-    height: 20px;
-    font-family: "Inter", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
-    color: #fff;
-    flex: none;
-    flex-grow: 0;
   }
 
   .card-content ul li a:hover {
@@ -1449,6 +1461,12 @@
     flex-grow: 0;
   }
 
+  .work-details button:hover {
+    background-color: #efddd0;
+    border: 2px solid #ff6b00;
+    color: #ff6b00;
+  }
+
   .iwork {
     margin: 0;
     height: auto;
@@ -1538,6 +1556,11 @@
     left: calc(50% - 164px / 2);
     top: calc(50% - 40px / 2);
     background: #ff6b00;
+  }
+
+  .card-content .card-button .c-button:hover {
+    background-color: #f3e8e1;
+    color: orange;
   }
 
   .me {
