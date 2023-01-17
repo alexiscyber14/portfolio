@@ -840,6 +840,11 @@
     color: #fff;
   }
 
+  #submit:hover{
+    background-color: red;
+    color: white;
+  }
+
   footer {
     position: absolute;
     width: 100%;
