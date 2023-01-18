@@ -1205,6 +1205,10 @@
     flex-grow: 0;
   }
 
+  .about-mebutton:active {
+    background-color: #e05304;
+  }
+
   .line2 {
     width: 93%;
     margin-left: 15px;
@@ -1618,7 +1622,7 @@
     position: absolute;
     width: 80%;
     height: 500.46px;
-    top: 800px;
+    top: 500px;
   }
 
   .skill-wrapper {
@@ -1683,7 +1687,7 @@
   .skill-head h4 {
     width: 100%;
     overflow: hidden;
-    height: 24px;
+    height: 54px;
     font-family: "InaiMathi", sans-serif;
     font-style: normal;
     font-weight: 700;
