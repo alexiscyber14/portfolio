@@ -1162,7 +1162,7 @@
 
   .welcome .intro p {
     margin: 0;
-    font-family: "Poppins", sans-serif;
+    font-family: "inter", sans-serif;
     font-style: normal;
     font-weight: 400;
     width: 90%;
@@ -1175,7 +1175,7 @@
 
   .welcome .intro .help-text {
     margin: 20px 0 0;
-    font-family: "Roboto", sans-serif;
+    font-family: "inter", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
