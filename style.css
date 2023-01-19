@@ -26,17 +26,18 @@
     color: white;
   }
 
-  .rotate{
+  .rotate {
     width: 70px;
-    margin: 0px;
+    margin: 0;
     animation: rotate-logo 5s 1;
   }
 
-  @keyframes rotate-logo{
-    from{
+  @keyframes rotate-logo {
+    from {
       transform: rotate(0deg);
     }
-    to{
+
+    to {
       transform: rotate(360deg);
     }
   }
@@ -590,7 +591,8 @@
     height: 436px;
     position: relative;
     flex: none;
-    background: linear-gradient(
+    background:
+      linear-gradient(
         180.45deg,
         rgba(38, 38, 38, 0) 0.75%,
         rgba(38, 38, 38, 0.9) 61.94%
@@ -904,17 +906,18 @@
     color: white;
   }
 
-  .rotate{
+  .rotate {
     width: 70px;
-    margin: 0px;
+    margin: 0;
     animation: rotate-logo 5s 1;
   }
 
-  @keyframes rotate-logo{
-    from{
+  @keyframes rotate-logo {
+    from {
       transform: rotate(0deg);
     }
-    to{
+
+    to {
       transform: rotate(360deg);
     }
   }
@@ -1533,7 +1536,8 @@
     height: 536px;
     position: relative;
     flex: none;
-    background: linear-gradient(
+    background:
+      linear-gradient(
         180.45deg,
         rgba(38, 38, 38, 0) 0.75%,
         rgba(38, 38, 38, 0.9) 61.94%
@@ -1801,10 +1805,9 @@
     flex-grow: 0;
   }
 
-  .form input:hover{
+  .form input:hover {
     transform: translate(1.5%);
   }
-
 
   .form textarea {
     width: 90%;
@@ -1816,7 +1819,7 @@
     background-color: rgba(250, 248, 244, 0.808);
   }
 
-  .form textarea:hover{
+  .form textarea:hover {
     transform: translate(1.5%);
   }
 
