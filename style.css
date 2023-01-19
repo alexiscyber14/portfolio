@@ -882,7 +882,9 @@
   .logo {
     padding-left: 15px;
     color: white;
+    background-color: red;
   }
+  
 
   footer ul li a {
     width: 24px;
