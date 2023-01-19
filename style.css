@@ -52,7 +52,12 @@
     margin-right: 10px;
   }
 
+  .max-menu {
+    display: none;
+  }
+
   .menu-icon {
+    display: flex;
     text-align: right;
     padding-right: 0;
     font-size: 25px;
@@ -638,7 +643,7 @@
     width: 100%;
     height: 2301px;
     left: 0;
-    top: 3500px;
+    top: 4300px;
     background: #1c1a19;
   }
 
@@ -770,7 +775,7 @@
     width: 100%;
     height: 100vh;
     left: 0;
-    top: 5800px;
+    top: 6700px;
   }
 
   .contact-text {
@@ -846,13 +851,948 @@
     height: 72px;
     left: 0;
     border-top: 2px solid grey;
-    top: 6500px;
+    top: 7400px;
     bottom: 0;
   }
 }
 
 @media only screen and (min-width: 768px) {
   body {
+    padding: 0;
+    margin: 0;
+  }
+
+  header {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    height: 52px;
+    left: 0;
+    align-items: center;
+    top: 0;
+    background: #3c3a39;
+  }
+
+  .box {
+    justify-content: baseline;
+    color: white;
+    width: 100%;
+  }
+
+  .logo {
+    padding-left: 15px;
+    color: white;
+  }
+
+  footer ul li a {
+    width: 24px;
+    height: 24px;
+    flex: none;
+    order: 0;
+    text-align: center;
+    flex-grow: 0;
+    padding-left: 6px;
+    font-size: 25px;
+    color: rgb(14, 14, 70);
+  }
+
+  .logo a {
+    text-decoration: none;
+    color: white;
+    margin-left: 20%;
+    font-family: "Poppins", sans-serif;
+  }
+
+  #logo-link {
+    color: white;
+  }
+
+  nav {
+    margin-right: 10px;
+    width: 100%;
+  }
+
+  .max-menu {
+    width: 100%;
+    display: flex;
+  }
+
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    position: absolute;
+    width: 250px;
+    height: 40px;
+    left: calc(50% - 150px / 2 + 0.5px);
+  }
+
+  .max-menu ul {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  footer ul li {
+    box-sizing: border-box;
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 9px;
+    height: 40px;
+    background: none;
+    border: 0;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .max-menu ul li {
+    list-style: none;
+    width: 15%;
+    text-align: center;
+    font-size: 15px;
+    margin-right: 2%;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .work-details ul li {
+    box-sizing: border-box;
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 9px;
+    height: 40px;
+    background: #fff;
+    border: 1px solid #8993a4;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .skill-wrapper ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    width: 100%;
+    padding: 12px 0;
+    list-style: none;
+    height: 24px;
+    flex: none;
+    font-family: "Inter", "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    text-transform: capitalize;
+    color: #fff;
+    line-height: 43px;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .card-content ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 20px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.24);
+    flex: none;
+    flex-grow: 0;
+    margin-bottom: 10px;
+  }
+
+  .work-details ul li:hover {
+    background-color: #ff6b00;
+  }
+
+  .max-menu ul li:hover {
+    background-color: red;
+    color: white;
+  }
+
+  .about-me button a {
+    height: 24px;
+    font-family: "Inter", "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    display: flex;
+    text-decoration: none;
+    text-transform: capitalize;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #fff;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .work-details button a {
+    height: 24px;
+    font-family: "Inter", "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #fff;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .max-menu ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .menu-icon {
     display: none;
+    text-align: right;
+    padding-right: 0;
+    font-size: 25px;
+  }
+
+  main {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 52px;
+  }
+
+  /* welcome section css */
+  .welcome {
+    height: 780px;
+    background: #1c1a19;
+    background-image: url(maxim.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 70%;
+  }
+
+  .welcome .intro {
+    padding: 6% 12% 0;
+    width: 50%;
+  }
+
+  .welcome .intro h1 {
+    padding-top: 50px;
+    width: 100%;
+    font-family: 'Crete Round font', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    margin: 0;
+    line-height: 81px;
+    letter-spacing: 0.37px;
+    color: #ff6b00;
+  }
+
+  .contact-text p {
+    width: 90%;
+    margin: 10px;
+    height: 216px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    text-align: left;
+    color: #172b4d;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .about-me p {
+    width: 40%;
+    margin-left: 10%;
+    height: 148px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    color: #f4f5f7;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  .work-details p {
+    width: 90%;
+    height: auto;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0;
+    line-height: 28px;
+    color: #091e42;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  .card-content p {
+    width: 90%;
+    margin: 10px;
+    font-family: "Inter", "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    color: #fff;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+  }
+
+  .welcome .intro p {
+    margin: 0;
+    font-family: "inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    width: 90%;
+    font-size: 20px;
+    color: #fff;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+  }
+
+  .welcome .intro .help-text {
+    margin: 20px 0 0;
+    font-family: "inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+    color: #fff5e1;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  .about-me button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px;
+    gap: 10px;
+    margin-left: 10%;
+    width: 161px;
+    height: 48px;
+    border: none;
+    background: #ff6b00;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+  }
+
+  .about-mebutton:active {
+    background-color: #e05304;
+  }
+
+  .line2 {
+    width: 90%;
+    margin-left: 50px;
+    position: absolute;
+    color: white;
+    top: 500px;
+    height: 2px;
+    background-color: white;
+  }
+
+  .work-details ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    gap: 12px;
+    width: 100%;
+    height: 40px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+  }
+
+  .work-details ul li a {
+    width: auto;
+    height: 20px;
+    font-family: "Inter", "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #091e42;
+    flex: none;
+    order: 0;
+    text-decoration: none;
+    flex-grow: 0;
+  }
+
+  .card-content ul li a {
+    width: auto;
+    text-decoration: none;
+    height: 20px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #fff;
+    flex: none;
+    flex-grow: 0;
+  }
+
+  .work-details button:hover a {
+    color: #ff6b00;
+  }
+
+  .work-details ul li a:hover {
+    color: white;
+  }
+
+  .card-content ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 3%;
+    width: 100%;
+    margin-left: 10px;
+    margin-bottom: 0;
+    height: auto;
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+  }
+
+  #hide {
+    display: none;
+  }
+
+  #uli {
+    display: none;
+  }
+
+  .skill-wrapper ul {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 0 12px;
+    gap: 8px;
+    height: auto;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  .card-content ul li:hover {
+    background-color: orange;
+    color: white;
+  }
+
+  .card-content ul li a:hover {
+    color: white;
+  }
+
+  .welcome .intro address {
+    padding: 0;
+    float: left;
+    position: absolute;
+    top: 200px;
+    left: 20px;
+  }
+
+  .welcome .intro address ul {
+    display: block;
+    padding: 0;
+    margin-top: 60px;
+  }
+
+  .welcome .intro address ul li {
+    display: flex;
+    margin-left: 2px;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 8px;
+    width: 40px;
+    height: 30px;
+    border-radius: 8px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .welcome .intro address ul li a {
+    width: 24px;
+    height: 24px;
+    flex: none;
+    order: 0;
+    text-align: center;
+    flex-grow: 0;
+    padding-left: 6px;
+    font-size: 25px;
+    color: white;
+  }
+
+  .welcome .intro address ul li:hover {
+    background-color: orange;
+  }
+
+  .works {
+    display: grid;
+    background-color: white;
+    height: 1000px;
+  }
+
+  .work {
+    margin: 15px;
+  }
+
+  .work-intro {
+    margin-top: 80px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .work-intro h2 {
+    font-family: "Crete Round", sans-serif;
+    font-style: normal;
+    width: auto;
+    padding: 1% 4%;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    color: #1c1a19;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .work-intro .line {
+    height: 2px;
+    width: 60%;
+    background: #757474;
+    margin-top: 70px;
+  }
+
+  .work-detail {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
+
+  .image-placeholder {
+    width: 40%;
+    height: auto;
+    flex: none;
+    order: 0;
+    padding: 1% 4%;
+    flex-grow: 0;
+  }
+
+  .image-placeholder img {
+    width: 100%;
+  }
+
+  .work-details {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 12px;
+    height: auto;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  .work-details h3 {
+    width: 100%;
+    height: 36px;
+    font-family: "Crete Round", "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    margin: 5px 10px 0;
+    line-height: 44px;
+    display: flex;
+    align-items: center;
+    color: #091e42;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .work-details button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px;
+    gap: 10px;
+    width: 124px;
+    height: 48px;
+    background: #ff6b00;
+    flex: none;
+    order: 3;
+    border: none;
+    flex-grow: 0;
+  }
+
+  .work-details button:hover {
+    background-color: #efddd0;
+    border: 2px solid #ff6b00;
+    color: #ff6b00;
+  }
+
+  .iwork {
+    margin: 0;
+    height: auto;
+    padding: 1% 4%;
+  }
+
+  .card-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+    gap: 24px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  .card {
+    display: flex;
+    border: 0 solid red;
+    width: 100%;
+    margin: 1%;
+    height: 536px;
+    position: relative;
+    flex: none;
+    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(web.jpg);
+    background-position: cover;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2px 3px;
+    gap: 12px;
+    height: auto;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
+
+  .card-content h3 {
+    width: 100%;
+    height: 81px;
+    font-family: "Crete Round", "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    padding-left: 14px;
+    line-height: 44px;
+    color: #fff;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  .card-button {
+    display: flex;
+    height: 41px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 98.7%;
+    position: absolute;
+    background: #ff6b00;
+  }
+
+  .card-content .card-button .c-button {
+    align-items: center;
+    padding: 12px;
+    gap: 10px;
+    font-size: 19px;
+    color: #fff;
+    font-style: normal;
+    letter-spacing: 0;
+    border: none;
+    position: absolute;
+    text-align: center;
+    width: 164px;
+    text-transform: capitalize;
+    font-weight: 600;
+    height: 40px;
+    left: calc(50% - 164px / 2);
+    top: calc(50% - 40px / 2);
+    background: #ff6b00;
+  }
+
+  .card-content .card-button .c-button:hover {
+    background-color: #f3e8e1;
+    color: orange;
+  }
+
+  .me {
+    position: absolute;
+    width: 100%;
+    height: 1000px;
+    left: 0;
+    top: 2700px;
+    background: #1c1a19;
+  }
+
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 24px;
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    left: 0;
+    top: 0;
+    background: #1c1a19;
+    background-image: url(Frame.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 40%;
+  }
+
+  .about-me h4 {
+    width: 90%;
+    height: 79px;
+    font-family: "Crete Round", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    margin-left: 10%;
+    line-height: 88px;
+    letter-spacing: 0.37px;
+    color: #ff6b00;
+    flex: none;
+    order: 0;
+    margin-bottom: 0;
+    flex-grow: 0;
+  }
+
+  .skill-container {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+    padding: 0% 10%;
+    position: absolute;
+    width: 80%;
+    height: 500.46px;
+    top: 500px;
+  }
+
+  .skill-wrapper {
+    display: grid;
+    flex-direction: row;
+    align-items: center;
+    gap: 1px;
+    width: 33.3333333%;
+    height: 400px;
+    overflow: hidden;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .skill-head {
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    height: 41.46px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .skill-head #rect {
+    width: 18px;
+    height: 18px;
+    background: #ff6b00;
+    transform: rotate(-45deg);
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .skill-head #square {
+    width: 18px;
+    height: 18px;
+    background: #ff6b00;
+    transform: rotate(-0deg);
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .skill-head #circle {
+    width: 18px;
+    height: 18px;
+    background: #ff6b00;
+    transform: rotate(-45deg);
+    border-radius: 16px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .skill-head h4 {
+    width: 100%;
+    overflow: hidden;
+    height: 54px;
+    font-family: "InaiMathi", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  .contact {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 58px;
+    padding: 0% 4%;
+    position: absolute;
+    width: 90%;
+    height: 70vh;
+    left: 0;
+    top: 3750px;
+  }
+
+  .contact-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    gap: 24px;
+    width: 50%;
+    height: 216px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .edge {
+    width: 50%;
+    overflow: hidden;
+  }
+
+  .form {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    gap: 24px;
+    width: 100%;
+    height: inherit;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  .form input {
+    width: 90%;
+    height: 40px;
+    flex: none;
+    font-size: 20px;
+    border: 1px  solid grey;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .form textarea {
+    width: 90%;
+    height: 214px;
+    flex: none;
+    order: 2;
+    border: 1px solid grey;
+    flex-grow: 0;
+    background-color: rgba(250, 248, 244, 0.808);
+  }
+
+  #submit {
+    width: 131px;
+    height: 48px;
+    background: #ff6b00;
+    order: 3;
+    border: none;
+    text-align: center;
+    color: #fff;
+  }
+
+  #submit:hover {
+    background-color: red;
+    color: white;
+  }
+
+  footer {
+    position: absolute;
+    width: 100%;
+    height: 72px;
+    left: 0;
+    border-top: 2px solid grey;
+    top: 4220px;
+    bottom: 0;
   }
 }
