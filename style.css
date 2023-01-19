@@ -26,6 +26,21 @@
     color: white;
   }
 
+  .rotate{
+    width: 70px;
+    margin: 0px;
+    animation: rotate-logo 5s 1;
+  }
+
+  @keyframes rotate-logo{
+    from{
+      transform: rotate(0deg);
+    }
+    to{
+      transform: rotate(360deg);
+    }
+  }
+
   footer ul li a {
     width: 24px;
     height: 24px;
@@ -887,6 +902,21 @@
   .logo {
     padding-left: 15px;
     color: white;
+  }
+
+  .rotate{
+    width: 70px;
+    margin: 0px;
+    animation: rotate-logo 5s 1;
+  }
+
+  @keyframes rotate-logo{
+    from{
+      transform: rotate(0deg);
+    }
+    to{
+      transform: rotate(360deg);
+    }
   }
 
   footer ul li a {
@@ -1771,6 +1801,11 @@
     flex-grow: 0;
   }
 
+  .form input:hover{
+    transform: translate(1.5%);
+  }
+
+
   .form textarea {
     width: 90%;
     height: 214px;
@@ -1779,6 +1814,10 @@
     border: 1px solid grey;
     flex-grow: 0;
     background-color: rgba(250, 248, 244, 0.808);
+  }
+
+  .form textarea:hover{
+    transform: translate(1.5%);
   }
 
   #submit {
