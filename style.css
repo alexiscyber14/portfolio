@@ -26,6 +26,22 @@
     color: white;
   }
 
+  .rotate {
+    width: 70px;
+    margin: 0;
+    animation: rotate-logo 5s 1;
+  }
+
+  @keyframes rotate-logo {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
   footer ul li a {
     width: 24px;
     height: 24px;
@@ -575,7 +591,13 @@
     height: 436px;
     position: relative;
     flex: none;
-    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(web.jpg);
+    background:
+      linear-gradient(
+        180.45deg,
+        rgba(38, 38, 38, 0) 0.75%,
+        rgba(38, 38, 38, 0.9) 61.94%
+      ),
+      url(web.jpg);
     background-position: cover;
     order: 0;
     flex-grow: 0;
@@ -812,7 +834,7 @@
     width: 90%;
     height: 40px;
     flex: none;
-    border: 1px  solid grey;
+    border: 1px solid grey;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -882,6 +904,22 @@
   .logo {
     padding-left: 15px;
     color: white;
+  }
+
+  .rotate {
+    width: 70px;
+    margin: 0;
+    animation: rotate-logo 5s 1;
+  }
+
+  @keyframes rotate-logo {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
   }
 
   footer ul li a {
@@ -956,7 +994,7 @@
     text-align: center;
     font-size: 15px;
     margin-right: 2%;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
   }
 
   .work-details ul li {
@@ -1091,7 +1129,7 @@
   .welcome .intro h1 {
     padding-top: 50px;
     width: 100%;
-    font-family: 'Crete Round font', sans-serif;
+    font-family: "Crete Round font", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 72px;
@@ -1498,7 +1536,13 @@
     height: 536px;
     position: relative;
     flex: none;
-    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(web.jpg);
+    background:
+      linear-gradient(
+        180.45deg,
+        rgba(38, 38, 38, 0) 0.75%,
+        rgba(38, 38, 38, 0.9) 61.94%
+      ),
+      url(web.jpg);
     background-position: cover;
     order: 0;
     flex-grow: 0;
@@ -1753,12 +1797,16 @@
     height: 40px;
     flex: none;
     font-size: 20px;
-    border: 1px  solid grey;
+    border: 1px solid grey;
     border-top: none;
     border-left: none;
     border-right: none;
     order: 0;
     flex-grow: 0;
+  }
+
+  .form input:hover {
+    transform: translate(1.5%);
   }
 
   .form textarea {
@@ -1769,6 +1817,10 @@
     border: 1px solid grey;
     flex-grow: 0;
     background-color: rgba(250, 248, 244, 0.808);
+  }
+
+  .form textarea:hover {
+    transform: translate(1.5%);
   }
 
   #submit {
@@ -1794,5 +1846,9 @@
     border-top: 2px solid grey;
     top: 4220px;
     bottom: 0;
+  }
+
+  .card:hover {
+    transform: scale(1.2);
   }
 }
