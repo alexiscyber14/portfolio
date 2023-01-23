@@ -9,12 +9,6 @@
 
 
 
-<details>
-  <summary>Visit webpage</summary>
-  <ul>
-    <li><a href="https://alexiscyber14.github.io/portfolio/">Click here to view the webpage of this repository</a></li>
-  </ul>
-</details>
 </div>
 
 
@@ -91,10 +85,12 @@
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-
-> Add a link to your deployed project.
-
-- [coming soon](https://yourdeployedapplicationlink.com)
+<details>
+  <summary>Visit webpage</summary>
+  <ul>
+    <li><a href="https://alexiscyber14.github.io/portfolio/">Click here to view the webpage of this repository</a></li>
+  </ul>
+</details>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
