@@ -16,21 +16,22 @@
         <header>
         <div class="box logo"><p class="rotate"><a href="/">LEXI</a></p></div>
         <nav>
-            <div class="max-menu">
+            <div class="max-menu" id="menu">
                 <ul>
-                    <li><a href="">Portfolio</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href=""><i class="fa fa-envelope"></i></a></li>
+                    <li class="navlink"><a href="#my_projects">Portfolio</a></li>
+                    <li class="navlink"><a href="#about_i">About</a></li>
+                    <li class="navlink"><a href="#contacting_me">Contact</a></li>
+                    <li class="navlink"><a href="#contacting_me"><i class="fa fa-envelope"></i></a></li>
                     
                 </ul>
             </div>
-            <div class="box menu-icon">
-            <i class="fa fa-bars"></i>
+            <div class="box menu-icon" id="menu-icons">
+            <i class="fa fa-bars" id="open-menu"></i>
+            <i class="fa fa-times" id="close-menu"></i>
         </div></nav>
         </header>
         <main>
-        <section class="container welcome">
+        <section class="container welcome" id="about_i">
             <div class="intro">
                 <h1>Hello There. I'm Alex Sssenyondo</h1>
                 <p class="help-text">I am a Software Developer</p>
@@ -51,7 +52,7 @@
         <section class="container works" >
 <div class="work">
 <div class="work-intro">
-    <h2>My recents works</h2>
+    <h2 id="my_projects">My recents works</h2>
     <div class="line"></div>
 </div>
 <div class="work-detail">
@@ -218,7 +219,7 @@
 
 </div>
 </section>
-<section class="container contact">
+<section class="container contact" id="contacting_me">
     <div class="contact-text">
         <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p> 
     </div>
@@ -239,7 +240,7 @@
     </ul>
     <div class="footer-line"></div>
 </footer>
-
+<script src="index.js"  type="text/javascript"></script>
 </body>
 
 </html>

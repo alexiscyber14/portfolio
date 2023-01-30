@@ -4,6 +4,17 @@
     margin: 0;
   }
 
+  a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: #f4f5f7;
+  }
+
+  li {
+    list-style: none;
+    color: #f4f5f7;
+  }
+
   header {
     position: absolute;
     width: 100%;
@@ -69,7 +80,19 @@
   }
 
   .max-menu {
-    display: none;
+    position: fixed;
+    width: 70%;
+    left: -90%;
+    z-index: 2;
+    height: 100vh;
+    box-shadow: 1px 1px 8px  1px rgba(0, 0, 0, 0.2);
+    border-radius: 0;
+    padding: 0%;
+    top: 0;
+    overflow: hidden;
+    padding-top: 0;
+    background-color: rgb(62, 60, 60);
+    transition: 1s ease;
   }
 
   .menu-icon {
