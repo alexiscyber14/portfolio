@@ -14,7 +14,8 @@
     list-style: none;
     color: #f4f5f7;
   }
-  .navlink{
+
+  .navlink {
     font-size: 28px;
     border-bottom: 1px solid rgb(219, 219, 219);
     margin-top: 10px;
@@ -47,7 +48,7 @@
   }
 
   .rotate {
-    display: none;;
+    display: none;
     width: 70px;
     margin: 0;
     animation: rotate-logo 5s 1;
