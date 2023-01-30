@@ -11,14 +11,14 @@ open.addEventListener('click', () => {
 });
 
 shut.addEventListener('click', () => {
-  menu.style.left = '-90%';
+  menu.style.left = '-100%';
   shut.style.display = 'none';
   open.style.display = 'block';
 });
 
 links.forEach((btn) => {
   btn.addEventListener('click', () => {
-    menu.style.left = '-90%';
+    menu.style.left = '-100%';
     shut.style.display = 'none';
     open.style.display = 'block';
   });
