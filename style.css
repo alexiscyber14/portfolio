@@ -1517,8 +1517,6 @@
     flex-grow: 0;
   }
 
-
-
   .work-details ul li a:hover {
     color: white;
   }
@@ -2062,5 +2060,4 @@
     top: 4220px;
     bottom: 0;
   }
-
 }
