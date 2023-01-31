@@ -3,79 +3,117 @@
     padding: 0;
     margin: 0;
   }
-  /*popup css*/
-            .model-image-container #featured{
+
+  /* popup css */
+  .model-image-container #featured {
     width: 100%;
     height: 200px;
-}
-            .modal {
-  display: none;
-  position: fixed;
-  z-index: 40;
-    padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%; 
-  height: 100%; 
-  background-color: rgba(221, 219, 219, 0.404);
-  background-color: rgba(0, 0, 0, 0.867); 
-}
+  }
 
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 40;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(221, 219, 219, 0.404);
+    background-color: rgba(0, 0, 0, 0.867);
+  }
 
-.modal-content {
-  background-color: #ffffff;
-  margin: auto;
-  padding: 20px;
-  border: 3px solid rgb(233, 139, 9);
-  width: 80%;
-  overflow: auto;
-  height: 80vh;
+  .modal-content {
+    background-color: #fff;
+    margin: auto;
+    padding: 20px;
+    border: 3px solid rgb(233, 139, 9);
+    width: 80%;
+    overflow: auto;
+    height: 80vh;
+  }
 
-}
-.modal-content h4{
+  .modal-content h4 {
     color: rgb(35, 33, 33);
-    overflow:auto;
+    overflow: auto;
     padding: 0;
     margin: 0;
     font-size: 25px;
     font-family: 'Poppins', sans-serif;
-}.modal-content .mo-links ul li{
+  }
+
+  li {
+    list-style: none;
+    color: #f4f5f7;
+  }
+
+  footer ul li {
+    box-sizing: border-box;
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 9px;
+    height: 40px;
+    background: none;
+    border: 0;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .work-details ul li {
+    box-sizing: border-box;
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 9px;
+    height: 40px;
+    background: #fff;
+    border: 1px solid #8993a4;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .skill-wrapper ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 0;
+    width: auto;
+    list-style: none;
+    height: 24px;
+    flex: none;
+    font-family: "Inter", "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    text-transform: capitalize;
+    color: #fff;
+    line-height: 43px;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .card-content ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 20px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.24);
+    flex: none;
+    flex-grow: 0;
+    margin-bottom: 10px;
+  }
+
+  .modal-content .mo-links ul li {
     border: 1px solid rgb(114, 114, 114);
     height: 15px;
     color: black;
-}
-.modal-content .mo-links ul li a{
-    color: black;
-    text-transform: capitalize;
-}
-.mo-detail p{
-    color: rgb(21, 20, 20);
-    font-family: 'Poppins', sans-serif;
-}.mo-footer ul li{
-    border: 1px solid rgb(211, 211, 211);
-    background-color:#FF6B00;;
-    height: 15px;
-}
-.mo-footer ul li a{
-    color: rgb(255, 255, 255);
-    text-transform: capitalize;
-}
-
-.close {
-  color: #8e8a8a;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: rgb(216, 216, 216);
-  text-decoration: none;
-  cursor: pointer;
-}
-
-  /*end popup css*/
+  }
 
   a {
     text-decoration: none;
@@ -83,10 +121,126 @@
     color: #f4f5f7;
   }
 
-  li {
-    list-style: none;
-    color: #f4f5f7;
+  footer ul li a {
+    width: 24px;
+    height: 24px;
+    flex: none;
+    order: 0;
+    text-align: center;
+    flex-grow: 0;
+    padding-left: 6px;
+    font-size: 25px;
+    color: rgb(14, 14, 70);
   }
+
+  .logo a {
+    text-decoration: none;
+    color: white;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .about-me button a {
+    height: 24px;
+    font-family: "Inter", "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    display: flex;
+    text-decoration: none;
+    text-transform: capitalize;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #fff;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .work-details button a {
+    height: 24px;
+    font-family: "Inter", "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #fff;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .mo-footer ul li a {
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+  }
+
+  .work-details ul li a {
+    width: auto;
+    height: 20px;
+    font-family: "Inter", "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #091e42;
+    flex: none;
+    order: 0;
+    text-decoration: none;
+    flex-grow: 0;
+  }
+
+  .card-content ul li a {
+    width: auto;
+    text-decoration: none;
+    height: 20px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #fff;
+    flex: none;
+    flex-grow: 0;
+  }
+
+  .modal-content .mo-links ul li a {
+    color: black;
+    text-transform: capitalize;
+  }
+
+  .mo-detail .pop-para {
+    color: rgb(21, 20, 20);
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .modal-content .mo-footer ul li {
+    border: 1px solid rgb(211, 211, 211);
+    background-color: #ff6b00;
+    height: 15px;
+  }
+
+  .close {
+    color: #8e8a8a;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: rgb(216, 216, 216);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* end popup css */
 
   .navlink {
     font-size: 28px;
@@ -134,24 +288,6 @@
     to {
       transform: rotate(360deg);
     }
-  }
-
-  footer ul li a {
-    width: 24px;
-    height: 24px;
-    flex: none;
-    order: 0;
-    text-align: center;
-    flex-grow: 0;
-    padding-left: 6px;
-    font-size: 25px;
-    color: rgb(14, 14, 70);
-  }
-
-  .logo a {
-    text-decoration: none;
-    color: white;
-    font-family: "Poppins", sans-serif;
   }
 
   #logo-link {
@@ -324,25 +460,6 @@
     flex-grow: 0;
   }
 
-  .about-me button a {
-    height: 24px;
-    font-family: "Inter", "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 24px;
-    display: flex;
-    text-decoration: none;
-    text-transform: capitalize;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #fff;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-  }
-
   .line2 {
     width: 93%;
     margin-left: 15px;
@@ -377,69 +494,6 @@
     flex-grow: 0;
   }
 
-  footer ul li {
-    box-sizing: border-box;
-    display: flex;
-    list-style: none;
-    flex-direction: row;
-    align-items: center;
-    padding: 5px 9px;
-    height: 40px;
-    background: none;
-    border: 0;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-  }
-
-  .work-details ul li {
-    box-sizing: border-box;
-    display: flex;
-    list-style: none;
-    flex-direction: row;
-    align-items: center;
-    padding: 5px 9px;
-    height: 40px;
-    background: #fff;
-    border: 1px solid #8993a4;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-  }
-
-  .work-details button a {
-    height: 24px;
-    font-family: "Inter", "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 24px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #fff;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-  }
-
-  .work-details ul li a {
-    width: auto;
-    height: 20px;
-    font-family: "Inter", "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
-    color: #091e42;
-    flex: none;
-    order: 0;
-    text-decoration: none;
-    flex-grow: 0;
-  }
-
   .card-content ul {
     display: flex;
     flex-direction: row;
@@ -465,55 +519,9 @@
     flex-grow: 0;
   }
 
-  .skill-wrapper ul li {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 12px 0;
-    width: auto;
-    list-style: none;
-    height: 24px;
-    flex: none;
-    font-family: "Inter", "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 27px;
-    text-transform: capitalize;
-    color: #fff;
-    line-height: 43px;
-    order: 0;
-    flex-grow: 0;
-  }
-
-  .card-content ul li {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 10px 20px;
-    height: 30px;
-    background: rgba(255, 255, 255, 0.24);
-    flex: none;
-    flex-grow: 0;
-    margin-bottom: 10px;
-  }
-
   .card-content ul li:hover {
     background-color: orange;
     color: white;
-  }
-
-  .card-content ul li a {
-    width: auto;
-    text-decoration: none;
-    height: 20px;
-    font-family: "Inter", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
-    color: #fff;
-    flex: none;
-    flex-grow: 0;
   }
 
   .card-content ul li a:hover {
@@ -694,7 +702,8 @@
     display: flex;
     border: 0 solid red;
     width: 100%;
-    /*margin-top: 50px;*/
+
+    /* margin-top: 50px; */
     height: 436px;
     position: relative;
     flex: none;
@@ -991,6 +1000,266 @@
     margin: 0;
   }
 
+  /* popup css */
+  .model-image-container #featured {
+    width: 100%;
+    height: auto;
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 40;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(221, 219, 219, 0.404);
+    background-color: rgba(0, 0, 0, 0.867);
+  }
+
+  .modal-content {
+    background-color: #fff;
+    margin: auto;
+    padding: 20px;
+    border: 3px solid rgb(233, 139, 9);
+    width: 80%;
+    overflow: auto;
+    height: 80vh;
+  }
+
+  .modal-content .para-image {
+    display: flex;
+    margin-top: 20px;
+  }
+
+  .modal-content .para-image div {
+    width: 100%;
+  }
+
+  .modal-content h4 {
+    color: rgb(35, 33, 33);
+    overflow: auto;
+    padding: 0;
+    margin: 0;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  footer ul li {
+    box-sizing: border-box;
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 9px;
+    height: 40px;
+    background: none;
+    border: 0;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .work-details ul li {
+    box-sizing: border-box;
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 9px;
+    height: 40px;
+    background: #fff;
+    border: 1px solid #8993a4;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .max-menu ul li {
+    list-style: none;
+    width: 15%;
+    text-align: center;
+    font-size: 15px;
+    margin-right: 2%;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .skill-wrapper ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    width: 100%;
+    padding: 12px 0;
+    list-style: none;
+    height: 24px;
+    flex: none;
+    font-family: "Inter", "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    text-transform: capitalize;
+    color: #fff;
+    line-height: 43px;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .card-content ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 20px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.24);
+    flex: none;
+    flex-grow: 0;
+    margin-bottom: 10px;
+  }
+
+  .modal-content .mo-links ul li {
+    border: 1px solid rgb(114, 114, 114);
+    height: 15px;
+    color: black;
+  }
+
+  footer ul li a {
+    width: 24px;
+    height: 24px;
+    flex: none;
+    order: 0;
+    text-align: center;
+    flex-grow: 0;
+    padding-left: 6px;
+    font-size: 25px;
+    color: rgb(14, 14, 70);
+  }
+
+  .logo a {
+    text-decoration: none;
+    color: white;
+    margin-left: 20%;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .about-me button a {
+    height: 24px;
+    font-family: "Inter", "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    display: flex;
+    text-decoration: none;
+    text-transform: capitalize;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #fff;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .work-details button a {
+    height: 24px;
+    font-family: "Inter", "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #fff;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .mo-footer ul li a {
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+  }
+
+  .max-menu ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .work-details ul li a {
+    width: auto;
+    height: 20px;
+    font-family: "Inter", "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #091e42;
+    flex: none;
+    order: 0;
+    text-decoration: none;
+    flex-grow: 0;
+  }
+
+  .card-content ul li a {
+    width: auto;
+    text-decoration: none;
+    height: 20px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #fff;
+    flex: none;
+    flex-grow: 0;
+  }
+
+  .work-details button:hover a {
+    color: #ff6b00;
+  }
+
+  .modal-content .mo-links ul li a {
+    color: black;
+    text-transform: capitalize;
+  }
+
+  .mo-detail .pop-para {
+    color: rgb(21, 20, 20);
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .modal-content .mo-footer {
+    background-color: transparent;
+    bottom: 26%;
+    position: absolute;
+  }
+
+  .modal-content .mo-footer ul li {
+    border: 1px solid rgb(211, 211, 211);
+    background-color: #ff6b00;
+    height: 15px;
+  }
+
+  .close {
+    color: #8e8a8a;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: rgb(216, 216, 216);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* end popup css */
   header {
     position: fixed;
     width: 100%;
@@ -1031,25 +1300,6 @@
     }
   }
 
-  footer ul li a {
-    width: 24px;
-    height: 24px;
-    flex: none;
-    order: 0;
-    text-align: center;
-    flex-grow: 0;
-    padding-left: 6px;
-    font-size: 25px;
-    color: rgb(14, 14, 70);
-  }
-
-  .logo a {
-    text-decoration: none;
-    color: white;
-    margin-left: 20%;
-    font-family: "Poppins", sans-serif;
-  }
-
   #logo-link {
     color: white;
   }
@@ -1082,77 +1332,6 @@
     align-items: center;
   }
 
-  footer ul li {
-    box-sizing: border-box;
-    display: flex;
-    list-style: none;
-    flex-direction: row;
-    align-items: center;
-    padding: 5px 9px;
-    height: 40px;
-    background: none;
-    border: 0;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-  }
-
-  .max-menu ul li {
-    list-style: none;
-    width: 15%;
-    text-align: center;
-    font-size: 15px;
-    margin-right: 2%;
-    font-family: "Poppins", sans-serif;
-  }
-
-  .work-details ul li {
-    box-sizing: border-box;
-    display: flex;
-    list-style: none;
-    flex-direction: row;
-    align-items: center;
-    padding: 5px 9px;
-    height: 40px;
-    background: #fff;
-    border: 1px solid #8993a4;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-  }
-
-  .skill-wrapper ul li {
-    display: flex;
-    flex-direction: row;
-    align-items: left;
-    width: 100%;
-    padding: 12px 0;
-    list-style: none;
-    height: 24px;
-    flex: none;
-    font-family: "Inter", "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 27px;
-    text-transform: capitalize;
-    color: #fff;
-    line-height: 43px;
-    order: 0;
-    flex-grow: 0;
-  }
-
-  .card-content ul li {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 10px 20px;
-    height: 30px;
-    background: rgba(255, 255, 255, 0.24);
-    flex: none;
-    flex-grow: 0;
-    margin-bottom: 10px;
-  }
-
   .work-details ul li:hover {
     background-color: #ff6b00;
   }
@@ -1160,48 +1339,6 @@
   .max-menu ul li:hover {
     background-color: red;
     color: white;
-  }
-
-  .about-me button a {
-    height: 24px;
-    font-family: "Inter", "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 24px;
-    display: flex;
-    text-decoration: none;
-    text-transform: capitalize;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #fff;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-  }
-
-  .work-details button a {
-    height: 24px;
-    font-family: "Inter", "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 24px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #fff;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-  }
-
-  .max-menu ul li a {
-    text-decoration: none;
-    color: #fff;
   }
 
   .menu-icon {
@@ -1380,38 +1517,7 @@
     flex-grow: 0;
   }
 
-  .work-details ul li a {
-    width: auto;
-    height: 20px;
-    font-family: "Inter", "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
-    color: #091e42;
-    flex: none;
-    order: 0;
-    text-decoration: none;
-    flex-grow: 0;
-  }
 
-  .card-content ul li a {
-    width: auto;
-    text-decoration: none;
-    height: 20px;
-    font-family: "Inter", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
-    color: #fff;
-    flex: none;
-    flex-grow: 0;
-  }
-
-  .work-details button:hover a {
-    color: #ff6b00;
-  }
 
   .work-details ul li a:hover {
     color: white;
@@ -1956,6 +2062,4 @@
     top: 4220px;
     bottom: 0;
   }
-
-
 }
