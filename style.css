@@ -3,6 +3,79 @@
     padding: 0;
     margin: 0;
   }
+  /*popup css*/
+            .model-image-container #featured{
+    width: 100%;
+    height: 200px;
+}
+            .modal {
+  display: none;
+  position: fixed;
+  z-index: 40;
+    padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  background-color: rgba(221, 219, 219, 0.404);
+  background-color: rgba(0, 0, 0, 0.867); 
+}
+
+
+.modal-content {
+  background-color: #ffffff;
+  margin: auto;
+  padding: 20px;
+  border: 3px solid rgb(233, 139, 9);
+  width: 80%;
+  overflow: auto;
+  height: 80vh;
+
+}
+.modal-content h4{
+    color: rgb(35, 33, 33);
+    overflow:auto;
+    padding: 0;
+    margin: 0;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+}.modal-content .mo-links ul li{
+    border: 1px solid rgb(114, 114, 114);
+    height: 15px;
+    color: black;
+}
+.modal-content .mo-links ul li a{
+    color: black;
+    text-transform: capitalize;
+}
+.mo-detail p{
+    color: rgb(21, 20, 20);
+    font-family: 'Poppins', sans-serif;
+}.mo-footer ul li{
+    border: 1px solid rgb(211, 211, 211);
+    background-color:#FF6B00;;
+    height: 15px;
+}
+.mo-footer ul li a{
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+}
+
+.close {
+  color: #8e8a8a;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(216, 216, 216);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+  /*end popup css*/
 
   a {
     text-decoration: none;
@@ -48,7 +121,6 @@
   }
 
   .rotate {
-    display: none;
     width: 70px;
     margin: 0;
     animation: rotate-logo 5s 1;
@@ -622,6 +694,7 @@
     display: flex;
     border: 0 solid red;
     width: 100%;
+    /*margin-top: 50px;*/
     height: 436px;
     position: relative;
     flex: none;
