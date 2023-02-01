@@ -66,6 +66,13 @@
 </details>
 
 <details>
+  <summary>responsiveness</summary>
+  <ul>
+    <li><a href="https://www.w3schools.com/javascript/default.asp">Javascript</a></li>
+  </ul>
+</details>
+
+<details>
 <summary>Others</summary>
   <ul>
     <li><a href="https://www.postgresql.org/">Json</a></li>
