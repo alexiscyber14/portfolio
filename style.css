@@ -852,7 +852,7 @@
     background-color: rgba(250, 248, 244, 0.808);
   }
 
-  #c-button {
+  #c-style {
     width: 131px;
     height: 48px;
     background: #ff6b00;
@@ -862,7 +862,7 @@
     color: #fff;
   }
 
-  #c-button:hover {
+  #c-style:hover {
     background-color: red;
     color: white;
   }
