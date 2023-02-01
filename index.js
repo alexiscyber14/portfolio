@@ -29,6 +29,224 @@ links.forEach((btn) => {
 });
 /* partner code start */
 
+const projec = [
+  {
+    id: 1,
+    titleOne: 'My recents works',
+    title: 'Multi-Post Stories',
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+    technologies: ['javascript', 'css', 'html', 'Ruby', 'bootstrap'],
+    button: 'see project',
+    featured_image: 'place.png',
+    thumnail_one: 'site3.jpg',
+    live: 'live version',
+    source: 'source code',
+    projectLink: 'https://github.com/alexiscyber14/portfolio',
+    projectLive: 'https://alexiscyber14.github.io/portfolio/',
+
+    html: 'Html',
+    css: 'css',
+    bootstrap: 'Bootsrap',
+    rub: 'Ruby',
+    projectLinkone: 'https://www.w3schools.com/html/',
+    projectLinktwo: 'https://getbootstrap.com/',
+    projectLinkthree: 'https://rubyonrails.org/',
+  },
+];
+const contain = document.getElementsByClassName('work')[0];
+
+projec.forEach((projecta) => {
+  const workIntro = document.createElement('div');
+  workIntro.className = 'work-intro';
+  contain.appendChild(workIntro);
+  const workIntroHead = document.createElement('h2');
+  workIntroHead.id = 'my_projects';
+  workIntro.appendChild(workIntroHead);
+  const workIntroHeadText = document.createTextNode(projecta.titleOne);
+  workIntroHead.appendChild(workIntroHeadText);
+
+  const line = document.createElement('div');
+  line.className = 'line';
+  workIntro.appendChild(line);
+
+  const workDetails = document.createElement('div');
+  workDetails.className = 'work-detail';
+  contain.appendChild(workDetails);
+
+  const workDetailsD = document.createElement('div');
+  workDetailsD.className = 'image-placeholder';
+  workDetails.appendChild(workDetailsD);
+  const imageDetailer = document.createElement('img');
+  imageDetailer.src = projecta.featured_image;
+  workDetailsD.appendChild(imageDetailer);
+
+  const workDetailsDiv = document.createElement('div');
+  workDetailsDiv.className = 'work-details';
+  workDetails.appendChild(workDetailsDiv);
+  const wdetailsh = document.createElement('h3');
+  const wdettex = document.createTextNode(projecta.title);
+  wdetailsh.appendChild(wdettex);
+  workDetailsDiv.appendChild(wdetailsh);
+
+  const brek = document.createElement('br');
+  workDetailsDiv.appendChild(brek);
+
+  const wdetailsp = document.createElement('p');
+  workDetailsDiv.appendChild(wdetailsp);
+  const worksDetailPtext = document.createTextNode(projecta.description);
+  wdetailsp.appendChild(worksDetailPtext);
+
+  const workdetailsUl = document.createElement('ul');
+  workDetailsDiv.appendChild(workdetailsUl);
+
+  const workdetailsLiOne = document.createElement('li');
+  workdetailsUl.appendChild(workdetailsLiOne);
+  const workdetailsLiTwo = document.createElement('li');
+  workdetailsUl.appendChild(workdetailsLiTwo);
+  const workdetailsLiThree = document.createElement('li');
+  workdetailsUl.appendChild(workdetailsLiThree);
+  const workdetailsLiFour = document.createElement('li');
+  workdetailsUl.appendChild(workdetailsLiFour);
+
+  const workaOne = document.createElement('a');
+  const atexone = document.createTextNode(projecta.css);
+  workaOne.appendChild(atexone);
+  workdetailsLiOne.appendChild(workaOne);
+  const workaTwo = document.createElement('a');
+  const atextwo = document.createTextNode(projecta.html);
+  workaTwo.appendChild(atextwo);
+  workdetailsLiTwo.appendChild(workaTwo);
+  const workaThree = document.createElement('a');
+  const atexthree = document.createTextNode(projecta.bootstrap);
+  workaThree.appendChild(atexthree);
+  workdetailsLiThree.appendChild(workaThree);
+  const workaFour = document.createElement('a');
+  const atexfour = document.createTextNode(projecta.rub);
+  workaFour.appendChild(atexfour);
+  workdetailsLiFour.appendChild(workaFour);
+
+  const but = document.createElement('button');
+  but.id = 'myBtn';
+  but.className = 'c-button';
+  workDetailsDiv.appendChild(but);
+  const btag = document.createElement('a');
+  but.appendChild(btag);
+
+  const buttext = document.createTextNode(projecta.button);
+  btag.appendChild(buttext);
+
+  // first tile model
+
+  // create the modal and its content
+  const popp = document.createElement('div');
+  workIntro.appendChild(popp);
+  popp.className = 'modal';
+  popp.id = 'myModal';
+
+  const modaloneContent = document.createElement('div');
+  popp.appendChild(modaloneContent);
+  modaloneContent.className = 'modal-content';
+
+  const modaloneSpan = document.createElement('span');
+  modaloneContent.appendChild(modaloneSpan);
+  modaloneSpan.className = 'close';
+  modaloneSpan.innerHTML = '&times;';
+
+  const modaloneH = document.createElement('h4');
+  modaloneContent.appendChild(modaloneH);
+  const modaloneText = document.createTextNode(projecta.title);
+  modaloneH.appendChild(modaloneText);
+  modaloneH.className = 'rain';
+
+  const modaloneLinkscontainer = document.createElement('div');
+  modaloneLinkscontainer.className = 'mo-links modal-top-links';
+  modaloneContent.appendChild(modaloneLinkscontainer);
+
+  const toponeUl = document.createElement('ul');
+  modaloneLinkscontainer.appendChild(toponeUl);
+
+  const toponeLione = document.createElement('li');
+
+  const toponelitwo = document.createElement('li');
+  const toponelithree = document.createElement('li');
+  const toponeAtagOne = document.createElement('a');
+  const toponeAtagTwo = document.createElement('a');
+  const toponeAtagThree = document.createElement('a');
+
+  toponeUl.appendChild(toponeLione);
+  toponeUl.appendChild(toponelitwo);
+  toponeUl.appendChild(toponelithree);
+  toponeLione.appendChild(toponeAtagOne);
+  toponelitwo.appendChild(toponeAtagTwo);
+  toponelithree.appendChild(toponeAtagThree);
+
+  const toponeTagTextOne = document.createTextNode(projecta.html);
+  const toponeTagTextTwo = document.createTextNode(projecta.bootstrap);
+  const toponeTagTextThree = document.createTextNode(projecta.rub);
+
+  toponeAtagOne.appendChild(toponeTagTextOne);
+  toponeAtagTwo.appendChild(toponeTagTextTwo);
+  toponeAtagThree.appendChild(toponeTagTextThree);
+
+  toponeAtagOne.href = `${projecta.projectLinkone}`;
+  toponeAtagTwo.href = `${projecta.projectLinktwo}`;
+  toponeAtagThree.href = `${projecta.projectLinkthree}`;
+
+  // modal images
+  const imageoneParagraphContainer = document.createElement('div');
+  imageoneParagraphContainer.className = 'para-image';
+  modaloneContent.appendChild(imageoneParagraphContainer);
+
+  const modeoneImage = document.createElement('div');
+  modeoneImage.className = 'mo-image';
+  imageoneParagraphContainer.appendChild(modeoneImage);
+  const modaloneImageContainer = document.createElement('div');
+  modaloneImageContainer.className = 'model-image-container';
+  modeoneImage.appendChild(modaloneImageContainer);
+  // give a class
+  const moneImage = document.createElement('img');
+  modaloneImageContainer.appendChild(moneImage);
+  moneImage.src = projecta.thumnail_one;
+  moneImage.id = 'featured';
+  moneImage.className = 'featured';
+
+  // footer deatil
+  const modlaoneDetail = document.createElement('div');
+  modlaoneDetail.className = 'mo-detail';
+  imageoneParagraphContainer.appendChild(modlaoneDetail);
+  const modlaoneDetailP = document.createElement('p');
+  modlaoneDetailP.className = 'pop-para';
+  modlaoneDetail.appendChild(modlaoneDetailP);
+  const modlaoneDetailPtext = document.createTextNode(projecta.description);
+  modlaoneDetailP.appendChild(modlaoneDetailPtext);
+
+  // fooetr below
+  const modaloneFooterLinks = document.createElement('div');
+  modaloneFooterLinks.className = 'mo-footer foot';
+  const footeroneUl = document.createElement('ul');
+  const footeroneLione = document.createElement('li');
+  const footeronelitwo = document.createElement('li');
+  const footeroneAtagOne = document.createElement('a');
+  const footeroneAtagTwo = document.createElement('a');
+
+  modlaoneDetail.appendChild(modaloneFooterLinks);
+  modaloneFooterLinks.appendChild(footeroneUl);
+  footeroneUl.appendChild(footeroneLione);
+  footeroneUl.appendChild(footeronelitwo);
+  footeroneLione.appendChild(footeroneAtagOne);
+  footeronelitwo.appendChild(footeroneAtagTwo);
+
+  const footeroneTagTextOne = document.createTextNode(projecta.source);
+  const footeroneTagTextTwo = document.createTextNode(projecta.live);
+  footeroneAtagOne.appendChild(footeroneTagTextOne);
+  footeroneAtagTwo.appendChild(footeroneTagTextTwo);
+  footeroneAtagOne.href = `${projecta.projectLink}`;
+  footeroneAtagTwo.href = `${projecta.projectLive}`;
+
+  // end modal
+
+  // end tile model
+});
 
 /* partner code ends */
 
