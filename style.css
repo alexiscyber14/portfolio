@@ -4,6 +4,52 @@
     margin: 0;
   }
 
+  /* first modal css */
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    position: absolute;
+    width: 250px;
+    height: 40px;
+    left: calc(50% - 150px / 2 + 0.5px);
+  }
+
+  .modal-top-links ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 12px;
+    width: 100%;
+    height: 40px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+  }
+
+  .foot ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 12px;
+    width: 100%;
+    height: 40px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+  }
+
+
+
+  /* end first modal css */
+
+
+
+
+
   /* popup css */
   .model-image-container #featured {
     width: 100%;
@@ -45,74 +91,6 @@
   li {
     list-style: none;
     color: #f4f5f7;
-  }
-
-  footer ul li {
-    box-sizing: border-box;
-    display: flex;
-    list-style: none;
-    flex-direction: row;
-    align-items: center;
-    padding: 5px 9px;
-    height: 40px;
-    background: none;
-    border: 0;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-  }
-
-  .work-details ul li {
-    box-sizing: border-box;
-    display: flex;
-    list-style: none;
-    flex-direction: row;
-    align-items: center;
-    padding: 5px 9px;
-    height: 40px;
-    background: #fff;
-    border: 1px solid #8993a4;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-  }
-
-  .skill-wrapper ul li {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 12px 0;
-    width: auto;
-    list-style: none;
-    height: 24px;
-    flex: none;
-    font-family: "Inter", "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 27px;
-    text-transform: capitalize;
-    color: #fff;
-    line-height: 43px;
-    order: 0;
-    flex-grow: 0;
-  }
-
-  .card-content ul li {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 10px 20px;
-    height: 30px;
-    background: rgba(255, 255, 255, 0.24);
-    flex: none;
-    flex-grow: 0;
-    margin-bottom: 10px;
-  }
-
-  .modal-content .mo-links ul li {
-    border: 1px solid rgb(114, 114, 114);
-    height: 15px;
-    color: black;
   }
 
   a {
@@ -174,6 +152,102 @@
     flex: none;
     order: 0;
     flex-grow: 0;
+  }
+
+  .foot ul li a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  footer ul li {
+    box-sizing: border-box;
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 9px;
+    height: 40px;
+    background: none;
+    border: 0;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .modal-top-links ul li {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    margin-left: 4px;
+    padding: 10px 10px;
+  }
+
+  .modal-top-links ul li a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .foot ul li {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    margin-left: 4px;
+    padding: 10px 10px;
+  }
+
+  .work-details ul li {
+    box-sizing: border-box;
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 9px;
+    height: 40px;
+    background: #fff;
+    border: 1px solid #8993a4;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .skill-wrapper ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 0;
+    width: auto;
+    list-style: none;
+    height: 24px;
+    flex: none;
+    font-family: "Inter", "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    text-transform: capitalize;
+    color: #fff;
+    line-height: 43px;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .card-content ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 20px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.24);
+    flex: none;
+    flex-grow: 0;
+    margin-bottom: 10px;
+  }
+
+  .modal-content .mo-links ul li {
+    border: 1px solid rgb(114, 114, 114);
+    height: 15px;
+    color: black;
   }
 
   .mo-footer ul li a {
@@ -468,17 +542,6 @@
     top: 600px;
     height: 2px;
     background-color: white;
-  }
-
-  footer ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0;
-    position: absolute;
-    width: 250px;
-    height: 40px;
-    left: calc(50% - 150px / 2 + 0.5px);
   }
 
   .work-details ul {
@@ -1000,6 +1063,10 @@
     margin: 0;
   }
 
+  /* first modal css */
+
+  /* end first modal css */
+
   /* popup css */
   .model-image-container #featured {
     width: 100%;
@@ -1060,6 +1127,24 @@
     flex: none;
     order: 0;
     flex-grow: 0;
+  }
+
+  .foot ul li {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    margin-left: 4px;
+    padding: 10px 10px;
+  }
+
+  .modal-top-links ul li {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    margin-left: 4px;
+    padding: 10px 10px;
   }
 
   .work-details ul li {
@@ -1178,6 +1263,16 @@
     flex: none;
     order: 0;
     flex-grow: 0;
+  }
+
+  .foot ul li a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .modal-top-links ul li a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
   }
 
   .mo-footer ul li a {
@@ -1323,6 +1418,32 @@
     width: 250px;
     height: 40px;
     left: calc(50% - 150px / 2 + 0.5px);
+  }
+
+  .modal-top-links ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 12px;
+    width: 100%;
+    height: 40px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+  }
+
+  .foot ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 12px;
+    width: 100%;
+    height: 40px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
   }
 
   .max-menu ul {
