@@ -579,3 +579,4 @@ modalClose.forEach((btn, i) => {
     modals[i].style.display = 'none';
   });
 });
+

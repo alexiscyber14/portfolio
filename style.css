@@ -2148,7 +2148,7 @@
     transform: translate(1.5%);
   }
 
-  #submit {
+  #b-style {
     width: 131px;
     height: 48px;
     background: #ff6b00;
@@ -2158,7 +2158,7 @@
     color: #fff;
   }
 
-  #submit:hover {
+  #b-style:hover {
     background-color: red;
     color: white;
   }
