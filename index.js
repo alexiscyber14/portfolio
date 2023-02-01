@@ -596,4 +596,3 @@ form.addEventListener('submit', (event) => {
     errorMessage.style.display = 'block';
   }
 });
-
