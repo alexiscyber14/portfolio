@@ -1,5 +1,12 @@
-.error-message{
+
+.error-message {
+  order: 3;
+  margin-top: 0;
+  border: none;
+  text-align: center;
+  color: #fff;
   color: red;
+  font-size: 12px;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -1027,7 +1034,7 @@
     background-color: rgba(250, 248, 244, 0.808);
   }
 
-  #b-style{
+  #b-style {
     width: 131px;
     height: 48px;
     background: #ff6b00;
