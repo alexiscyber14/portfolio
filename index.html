@@ -83,8 +83,8 @@
         margin: 0;
         text-transform: uppercase;
         font-weight: bold;
-        color:rgb(255, 1, 1); white;
-        border-left:5px solid rgb(255, 0, 0);
+        color:rgb(215, 0, 0);
+        border-left:5px solid rgb(215, 0, 0);
         font-size: 25px;
         margin-left: 5px;
         padding-left: -8px;
@@ -158,7 +158,7 @@ margin-right: 5px;
 background-color: transparent;
     }
     header nav .links-wrapper .menu button i{
-color: rgb(57, 57, 57);
+color: red; rgb(57, 57, 57);
     }
   </style>
 <section class="intro-section">
@@ -172,6 +172,7 @@ color: rgb(57, 57, 57);
 <div class="intro-content">
 <h1>XERXIS TECHNOLOGIES</h1>
 <P>embrace the future with innovative tech solutions</P>
+<a href=""><span>contact us</span></a>
 </div>
 </section>
 <style>
@@ -184,10 +185,10 @@ flex-direction: row;
         display: flex;
         padding: 2%;
         border-radius: 16px;
-        border: 2px solid white;
+        border: 3px solid rgb(155, 4, 4);
         flex-direction: column;
     }.intro-section .icons a{
-        color: white;
+        color: rgb(245, 245, 245);
         justify-content: space-around;
         margin-top: 10px;
         margin-bottom: 10px;
@@ -197,12 +198,11 @@ flex-direction: row;
         flex-direction: column;
         padding: 2%;
         padding-left: 8%;
-        padding-top: 10%;
+        padding-top: 4%;
         font-family: 'Poppins', sans-serif;
-        align-items: center;
         }.intro-section .intro-content h1{
 margin: 0;
-color: white;
+color: rgb(237, 237, 237);
 font-weight: bold;
 text-shadow:;
 font-size: 30px;
@@ -212,20 +212,106 @@ letter-spacing: 4px;
 margin: 0;
 text-transform: capitalize;
 text-align:left;
-color: #fff;
+color: #f4f4f4;
 font-size: 13px;
 letter-spacing: 2px;
 padding:1% 5%;
-border-left: 5px solid rgb(255, 255, 255);
+border-left: 5px solid rgb(231, 231, 231);
 border-bottom-right-radius: 160px;
         }
+        .intro-section .intro-content a{
+            color: white;
+            padding: 1% 2%;
+            text-align: center;
+            border: 3px solid  rgb(205, 0, 0);;
+            margin-top: 15%;
+            width: 60%;
+            text-transform: capitalize;
+        }
+        .intro-section .intro-content a span {
+            background-color: rgb(205, 0, 0);
+            padding: 0% 22%;
+        }
 </style>
+<section class="tiles-section">
+<div class="tiles-wrapper">
+<a href="">
+    <div>one</div>
+</a>
+<a href="">
+    <div>one</div>
+</a>
+<a href="">
+    <div>one</div>
+</a>
+    <div>
+</div>
+</section>
+<style>
+    .tiles-section{
+display: flex;
+flex-direction: column;
+    }.tiles-section .tiles-wrapper{
+display: flex;
+flex-direction: row;
+    }
+    .tiles-section .tiles-wrapper a{
+        width: 100%;
+        margin: 1%;
+        padding: 1%;
+        border: 2px solid rgb(236, 236, 236);
+    }
+    .tiles-section .tiles-wrapper a div{
+background-color: rgb(240, 240, 240);
+text-align: center;
+    }
+</style>
+
+
 <section class="mid-section">
+  <div class="mid-head">
+<h2>most recent</h2>
+<h3></h3>
+  </div>  
 <div class="mid-section-wrapper">
 <div>content</div>
 <div>image</div>
 </div>
 </section>
+<style>
+    .mid-section{
+        display: flex;
+        padding: 1%;
+        margin-top: 5%;
+        flex-direction: column;
+    }.mid-section .mid-head{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }.mid-section .mid-head h2{
+        color: #f4f4f4;
+        text-transform: capitalize;
+        margin: 0;
+        font-size: 23px;
+        font-family:sans-serif;
+    }.mid-section .mid-head h3{
+        margin: 0;
+        height: 3px;
+        background-color:#f4f4f4;
+        width: 50%;
+    }
+    .mid-section .mid-section-wrapper{
+display: flex;
+flex-direction:column;
+padding-top: 5%;
+    }  .mid-section .mid-section-wrapper div{
+        width: 100%;
+        background-color:red;
+        height: 200px;
+
+    }
+</style>
 
 <section class="container contact" id="contacting_me">
     <div class="contact-text">
