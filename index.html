@@ -13,103 +13,149 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <header>
-        <div class="box logo"><p class="rotate"><a href="/">LEXI</a></p></div>
-        <nav>
-            <div class="max-menu" id="menu">
-                <ul>
-                    <li class="navlink"><a href="#my_projects">Portfolio</a></li>
-                    <li class="navlink"><a href="#about_i">About</a></li>
-                    <li class="navlink"> <a href="#contacting_me">Contact</a></li>
-                    <li class="navlink"><a href="#contacting_me"><i class="fa fa-envelope"></i></a></li>
-                    
-                </ul>
+    <main>
+  <header>
+    <nav>
+        <div class="logo"><h2>xerxis</h2></div>
+        <div class="links-wrapper">
+            <div class="links">
+            <ul>
+                <li><i class="fa fa-github"></i><a href="">software development</a></li>
+                <li><i class="fa fa-server"></i><a href="">Website development</a></li>
+                <li><i class="fa fa-arrow-up   "></i><a href="">Pre-built Websites update</a></li>
+                <li><i class="fa fa-pencil"></i><a href="">UI UX DESIGN</a></li>
+                <li><i class="fa fa-headphones"></i><a href="">I.T/ICT Support services</a></li>
+                <li><i class="fa fa-users"></i><a href="">Social Media management</a></li>
+                <li><i class="fa fa-cogs"></i><a href="">Digital Markting</a></li>
+                <li><i class="fa fa-bookmark"></i><a href="">SEO DESIGN INTERGRATIONS</a></li>
+                <li><i class="fa fa-phone"></i><a href="">Consultation</a></li>
+            </ul>
             </div>
-            <div class="box menu-icon" id="menu-icons">
-            <i class="fa fa-bars" id="open-menu"></i>
-            <i class="fa fa-times" id="close-menu"></i>
-        </div></nav>
-        </header>
-        <main>
-        <section class="container welcome" id="about_i">
-            <div class="intro">
-                <h1>Hello There. I'm Alex Sssenyondo</h1>
-                <p class="help-text">I am a Software Developer</p>
-                <p>
-                    I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
-                    don't hestiate to contact me.
-                </p>
-                <address>
-                    <ul>
-                        <li><a href="https://www.linkedin.com/in/alex-ssenyondo-107056259?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B6LOUqZqWS7uMnxZWVeFX8w%3D%3D" class="icon-link"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="https://www.instagram.com/alexiscyber14" class="icon-link"><i class="fa fa-instagram"></i></a></li>
-                        <li><a href="" class="icon-link"><i class="fa fa-twitter"></i></a></li>
-                    </ul>
-                </address>
-
+            <div class="menu">
+                <button><i class="fa fa-bars"></i><i class="fa fa-times"></i></button>
             </div>
-        </section>
-        <section class="container works" >
-<div class="work">
-</div>
-<div class="iwork">
-<div class="card-container">
-</div>
-</div>
-    </section>
-<section class="container me">
-<div class="about-me">
-<h4>About me</h4>
-<p>
-    Hello I'm a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
-</p>
-<button type="reset"><a href="/">get my resume</a></button>
-</div>
-<div class="line2">
-</div>
-<div class="line"></div>
-<div class="skill-container">
-<div class="skill-wrapper">
-<div class="skill-head">
-    <span id="rect"></span>
-    <h4>Languages</h4>
-</div>
-<ul>
-<li>html</li>
-<li>css</li>
-<li>javascript</li>
-<li>Ruby</li>
-</ul>
-</div>
-<div class="skill-wrapper">
-    <div class="skill-head">
-        <span id="square"></span>
-        <h4>Frameworks</h4>
-    </div>
-    <ul>
-    <li>Bootstrap</li>
-    <li>Ruby on Rails</li>
-    <li>RSPec</li>
-    <li>CopyBara</li>
-    <li>Sellenium</li>
-    </ul>
-    </div>
-    <div class="skill-wrapper">
-        <div class="skill-head">
-            <span id="circle"></span>
-            <h4>Skills</h4>
         </div>
-        <ul>
-        <li>Codekit</li>
-        <li>Github</li>
-        <li>codepen</li>
-        <li>gitlab</li>
-        <li>Terminal</li>
-        </ul>
-        </div>
+    </nav>
+  </header>
+  <script>
 
-</div>
+  </script>
+  <style>
+    body{
+        margin: 0;
+        background-image: url('./er.jpg');
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+    li{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+    }
+    main{
+        height: 100vh;
+        overflow: auto;
+    }
+    header{
+        display: flex;
+        padding: 1%;
+        flex-direction: row;
+    }header nav{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+    }header nav .logo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+    }header nav .logo h2{
+        margin: 0;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: white;
+        border-left:5px solid rgb(255, 255, 255);
+        font-size: 30px;
+        border-bottom-left-radius: 6px;
+        border-top-left-radius:6px ;
+        letter-spacing: 2px;
+        font-family: 'Poppins', sans-serif;
+
+    }
+    header nav .links-wrapper{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        width: 90%;
+    }
+    header nav .links-wrapper .links{
+        position: absolute;
+        top: 0;
+        left: -85%;
+        height: 100vh;
+        overflow: auto;
+        background-color: rgba(27, 26, 26, 0.715);
+        width: 85%;
+    } header nav .links-wrapper .links ul{
+display: flex;
+margin: 0;
+padding: 0;
+flex-direction:column;
+    }
+    header nav .links-wrapper .links ul li{
+display: flex;
+padding-left: 6%;
+margin-top: 3%;
+flex-direction: row;
+align-items: center;
+    }
+    header nav .links-wrapper .links ul li i{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid white;
+        border-radius: 180px;
+        color: white;
+        font-size: 20px;
+        height: 23px;
+        width: 27px;
+        padding: 2%;
+        
+    }
+    header nav .links-wrapper .links ul li a{
+font-size:17px ;
+width:100%;
+text-transform: uppercase;
+color: #fff;
+margin-left: 3%;
+font-family: "Poppins", sans-serif;
+padding-bottom: 15px;
+padding-top: 10px;
+border-bottom: 3px solid grey;
+
+    }
+    header nav .links-wrapper .menu{
+width: 100%;
+display: flex;
+flex-direction: row-reverse;
+    }
+    header nav .links-wrapper .menu button{
+font-size: 40px;
+border: none;
+background-color: transparent;
+    }
+    header nav .links-wrapper .menu button i{
+color: white;
+    }
+  </style>
+<section class="intro section">
+
 </section>
+
+
 <section class="container contact" id="contacting_me">
     <div class="contact-text">
         <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p> 
@@ -133,6 +179,7 @@
     </ul>
     <div class="footer-line"></div>
 </footer>
+</main>
 <script src="index.js"  type="text/javascript"></script>
 </body>
 
