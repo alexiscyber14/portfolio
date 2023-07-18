@@ -58,15 +58,13 @@
     main{
         height: 100vh;
         overflow: auto;
-    background-color: rgba(0, 0, 0, 0.459);
+    background-color: rgba(0, 0, 0, 0.683);
     }
     header{
         display: flex;
         padding: 1%;
         flex-direction: row;
         padding-bottom: 3%;
-        background-color: rgba(58, 58, 58, 0.396);
-        border-bottom: 1px solid rgb(133, 133, 133);
     }header nav{
         display: flex;
         width: 100%;
@@ -82,7 +80,9 @@
         font-weight: bold;
         color:rgb(255, 1, 1); white;
         border-left:5px solid rgb(255, 0, 0);
-        font-size: 30px;
+        font-size: 25px;
+        margin-left: 5px;
+        padding-left: -8px;
         border-bottom-left-radius: 6px;
         border-top-left-radius:6px ;
         letter-spacing: 2px;
@@ -147,8 +147,12 @@ display: flex;
 flex-direction: row-reverse;
     }
     header nav .links-wrapper .menu button{
-font-size: 40px;
+font-size: 30px;
 border: none;
+right: 0;
+z-index: 3;
+top: 1%;
+position: absolute;
 background-color: transparent;
     }
     header nav .links-wrapper .menu button i{
