@@ -236,13 +236,24 @@ border-bottom-right-radius: 160px;
 <section class="tiles-section">
 <div class="tiles-wrapper">
 <a href="">
-    <div>one</div>
+    <div>
+        <h2>SEO</h2>
+    </div>
 </a>
 <a href="">
-    <div>one</div>
+    <div>
+        <h2>SEO</h2>
+    </div>
 </a>
 <a href="">
-    <div>one</div>
+    <div>
+        <h2>SEO</h2>
+    </div>
+</a>
+<a href="">
+    <div>
+        <h2>SEO</h2>
+    </div>
 </a>
     <div>
 </div>
@@ -251,13 +262,17 @@ border-bottom-right-radius: 160px;
     .tiles-section{
 display: flex;
 flex-direction: column;
+margin-top: 2%;
     }.tiles-section .tiles-wrapper{
 display: flex;
 flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around;
     }
     .tiles-section .tiles-wrapper a{
-        width: 100%;
+        width: 160px;
         margin: 1%;
+        height:auto;
         padding: 1%;
         border: 2px solid rgb(236, 236, 236);
     }
