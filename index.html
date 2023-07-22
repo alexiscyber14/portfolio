@@ -297,6 +297,7 @@ text-align: center;
 <style>
     .mid-section{
         display: flex;
+        background-color: #fff;
         padding: 1%;
         margin-top: 5%;
         flex-direction: column;
@@ -334,27 +335,35 @@ padding-top: 5%;
     <form id="quoteForm">
       <select id="serviceSelect">
         <option value="service0">Select a service</option>
-        <option value="service1">Service 1</option>
-        <option value="service2">Service 2</option>
+        <option value="service1">Software development</option>
+        <option value="service2">Website Development</option>
+        <option value="service3">Pre-built Website Updating</option>
+        <option value="service4">UI/UX Design</option>
+        <option value="service5">On-site & Remmote I.T Support</option>
+        <option value="service6">Social Media Management</option>
+        <option value="service7">Digital Marketing</option>
+        <option value="service8">SEO Design Intergrations</option>
+        <option value="service9">Consultation</option>
+        <option value="service10">Content Development</option>
      <!-- Add more options for different services -->
       </select>
       <button type="submit">Get Quote</button>
     </form>
     <div id="loading" class="loading"></div>
     <div class="ranges">
-        <p>Price Range:</p>
-        <p id="quoteResult">slect a serveice</p>
+        <p class="p-d">Price Range:</p>
+        <p id="quoteResult"><span class="small">slect a serveice</span></p>
     </div>
     </div>
 </section>
 <style>
 /* Add some basic styling to improve the appearance */
 .quote-section{
- 
     padding: 2%;
 }
 .quote-section .quote-wrapper{
     background-color: rgb(255, 255, 255);
+    padding-top: 1%;
 }
 .quote-section .quote-wrapper h1 {
   text-align: center;
@@ -366,24 +375,26 @@ padding-top: 5%;
 
 .quote-section .quote-wrapper form {
   display: flex;
-  flex-direction: row;
+  flex-direction:column;
   justify-content: space-around;
   align-items: center;
   padding-bottom: 2%;
 }
 .quote-section .quote-wrapper form select{
-width: 56%;
+width: 85%;
 outline: none;
 font-family: 'Poppins', sans-serif;
-font-size: 15px;
+font-size: 18px;
 border-radius: 0px;
 padding: 1% 0%;
 }
 .quote-section .quote-wrapper form button {
 width: 40%;
 font-family: 'Poppins', sans-serif;
-border-radius: 16px;
+border-radius: 3px;
 padding: 1% 0%;
+font-size: 16px;
+margin-top: 3%;
 border: none;
 background-color: rgb(183, 4, 4);
 color: #fff;
@@ -405,7 +416,12 @@ color: #fff;
     margin: 2%;
     align-items: center;
 }.quote-section .quote-wrapper .ranges p{
-
+font-family: 'Poppins', sans-serif;
+}
+.quote-section .quote-wrapper .ranges .p-d{
+    text-transform: uppercase;
+    margin-right: 8px;
+    font-weight: bold;
 }
 @keyframes spin {
   0% { transform: rotate(0deg); }
@@ -413,37 +429,16 @@ color: #fff;
 }
 
 #quoteResult {
+font-size: 18px;
 
+}
+.small{
+    font-size: 10px;
+    text-transform: capitalize;
 }
 </style>
 <script>
-    document.getElementById('quoteForm').addEventListener('submit', function(event) {
-  event.preventDefault();
 
-  const serviceSelect = document.getElementById('serviceSelect');
-  const selectedService = serviceSelect.value;
-
-  // Display the loading animation
-  const loading = document.getElementById('loading');
-  loading.style.display = 'block';
-
-  // Replace this with your actual asynchronous fetch or API call
-  // Simulating the delay using setTimeout
-  setTimeout(() => {
-    // Replace this with your actual price range data
-    const priceRanges = {
-      service1: '$100 - $200',
-      service2: '$150 - $300',
-      // Add more price ranges for different services
-    };
-
-    const quoteResult = document.getElementById('quoteResult');
-    quoteResult.textContent = `${priceRanges[selectedService]}`;
-
-    // Hide the loading animation after the quote is fetched
-    loading.style.display = 'none';
-  }, 1000); // Simulating a 1-second delay, change this as needed
-});
 
 </script>
 <section class="container contact" id="contacting_me">
@@ -466,11 +461,12 @@ color: #fff;
         display: flex;
         flex-direction: column;
         padding: 2%;
+        background-color: #fff;
     }.contact .contact-text{
         display: flex;
         flex-direction: column;
     }.contact .contact-text p{
-        color:#fff;
+        color:#333333;
         text-transform: capitalize;
         font-family: 'Poppins', sans-serif;
         font-size: 26px;
@@ -486,14 +482,19 @@ color: #fff;
         border-left: 4px solid rgb(181, 4, 4);
         padding: 2%;
         outline: none;
+        border-radius: 0px;
+        background: #ededed;
         width: 80%;
         font-size: 16px;
     }.contact .edge form textarea{
-        border-left: 4px solid rgb(181, 4, 4);
         text-transform: capitalize;
         margin-top: 2%;
-        height: 40vh;
+        background-color: #f7f7f7;
+        border-radius: 0px;
         outline: none;
+        resize: none;
+        border: none;
+        border-left: 2px solid rgb(181, 4, 4);
         font-size: 16px;
     }.contact .edge form button{
         width: 50%;
