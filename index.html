@@ -328,7 +328,124 @@ padding-top: 5%;
 
     }
 </style>
+<section class="quote-section">
+    <div class="quote-wrapper">
+    <h1>Get a Quote for Services</h1>
+    <form id="quoteForm">
+      <select id="serviceSelect">
+        <option value="service0">Select a service</option>
+        <option value="service1">Service 1</option>
+        <option value="service2">Service 2</option>
+     <!-- Add more options for different services -->
+      </select>
+      <button type="submit">Get Quote</button>
+    </form>
+    <div id="loading" class="loading"></div>
+    <div class="ranges">
+        <p>Price Range:</p>
+        <p id="quoteResult">slect a serveice</p>
+    </div>
+    </div>
+</section>
+<style>
+/* Add some basic styling to improve the appearance */
+.quote-section{
+ 
+    padding: 2%;
+}
+.quote-section .quote-wrapper{
+    background-color: rgb(255, 255, 255);
+}
+.quote-section .quote-wrapper h1 {
+  text-align: center;
+  font-size: 19px;
+  text-transform: capitalize;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
 
+.quote-section .quote-wrapper form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 2%;
+}
+.quote-section .quote-wrapper form select{
+width: 56%;
+outline: none;
+font-family: 'Poppins', sans-serif;
+font-size: 15px;
+border-radius: 0px;
+padding: 1% 0%;
+}
+.quote-section .quote-wrapper form button {
+width: 40%;
+font-family: 'Poppins', sans-serif;
+border-radius: 16px;
+padding: 1% 0%;
+border: none;
+background-color: rgb(183, 4, 4);
+color: #fff;
+
+}
+#loading {
+  display: none;
+  width: 40px;
+  height: 40px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+  margin: 20px auto;
+}
+.quote-section .quote-wrapper .ranges{
+    display: flex;
+    flex-direction: row;
+    margin: 2%;
+    align-items: center;
+}.quote-section .quote-wrapper .ranges p{
+
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#quoteResult {
+
+}
+</style>
+<script>
+    document.getElementById('quoteForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const serviceSelect = document.getElementById('serviceSelect');
+  const selectedService = serviceSelect.value;
+
+  // Display the loading animation
+  const loading = document.getElementById('loading');
+  loading.style.display = 'block';
+
+  // Replace this with your actual asynchronous fetch or API call
+  // Simulating the delay using setTimeout
+  setTimeout(() => {
+    // Replace this with your actual price range data
+    const priceRanges = {
+      service1: '$100 - $200',
+      service2: '$150 - $300',
+      // Add more price ranges for different services
+    };
+
+    const quoteResult = document.getElementById('quoteResult');
+    quoteResult.textContent = `${priceRanges[selectedService]}`;
+
+    // Hide the loading animation after the quote is fetched
+    loading.style.display = 'none';
+  }, 1000); // Simulating a 1-second delay, change this as needed
+});
+
+</script>
 <section class="container contact" id="contacting_me">
     <div class="contact-text">
         <p>I'm always interested in hearing about new projects. So if you'd like to chat, please get in touch.</p> 
