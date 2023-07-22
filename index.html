@@ -330,19 +330,61 @@ padding-top: 5%;
 
 <section class="container contact" id="contacting_me">
     <div class="contact-text">
-        <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p> 
+        <p>I'm always interested in hearing about new projects. So if you'd like to chat, please get in touch.</p> 
     </div>
     <div class="edge">
         <form action="https://formspree.io/f/mayznewd" class="form"  method="POST">
            <input type="text" placeholder="Full name" name="name" required  maxlength="30">
            <input type="email" placeholder="Email address" name="email"  required>
            <textarea name="message" id="message" cols="30" rows="10" maxlength="500" required placeholder="enter message"></textarea>
-           <button id="b-style"  type="submit">Get in touch</button>
+           <button id="b-style"  type="submit">Send</button>
            <span class="error-message" style="color:orangered;"></span>
         </form>
     
     </div>
 </section>
+<style>
+    .contact{
+        display: flex;
+        flex-direction: column;
+        padding: 2%;
+    }.contact .contact-text{
+        display: flex;
+        flex-direction: column;
+    }.contact .contact-text p{
+        color:#fff;
+        text-transform: capitalize;
+        font-family: 'Poppins', sans-serif;
+        font-size: 26px;
+    }.contact .edge{
+        display: flex;
+        flex-direction: column;
+    }.contact .edge form{
+        display: flex;
+        flex-direction: column;
+    }.contact .edge form input{
+        margin-top: 2%;
+        border: none;
+        border-left: 4px solid rgb(181, 4, 4);
+        padding: 2%;
+        width: 80%;
+    }.contact .edge form textarea{
+        border-left: 4px solid rgb(181, 4, 4);
+        text-transform: capitalize;
+        margin-top: 2%;
+    }.contact .edge form button{
+        width: 50%;
+        margin-left: 25%;
+        margin-top: 3%;
+        background-color:  rgb(181, 4, 4);
+        color: #fff;
+        border: none;
+        text-transform: capitalize;
+        font-size: 18px;
+        padding: 2% 0%;
+
+    }
+</style>
 <footer>
     <ul>
         <li><a href="https://www.linkedin.com/in/alex-ssenyondo-107056259?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B6LOUqZqWS7uMnxZWVeFX8w%3D%3D" class="icon-link"><i class="fa fa-linkedin"></i></a></li>
