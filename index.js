@@ -59,7 +59,7 @@ const reviews=()=>{
     let currentIndex = 0;
     let intervalId = null; // Variable to hold the interval ID for auto-scrolling
     const autoScrollDelay = 5000; // 5000ms = 5 seconds (change as needed)
-    
+    testimonialForm.classList.toggle('hidden');
     addTestimonialBtn.addEventListener('click', function() {
       testimonialForm.classList.toggle('hidden');
     });
@@ -102,3 +102,23 @@ const reviews=()=>{
     slider.addEventListener('mouseleave', startAutoScrolling);
 }
 reviews();
+
+
+function saveTestimonial() {
+  const name = document.getElementById('name').value;
+  const testimonialText = document.getElementById('testimonialText').value;
+  const testimonialForm = document.getElementById('testimonialForm');
+  const testimonialData = {
+    name: name,
+    testimonialText: testimonialText
+  };
+  console.log(JSON.stringify(testimonialData, null, 2));
+  document.getElementById('name').value = '';
+  document.getElementById('testimonialText').value = '';
+  const message = document.getElementById('pop');
+  message.innerHTML = 'review submited';
+  setTimeout(() => {
+    message.textContent = '';
+    testimonialForm.classList.toggle('hidden');
+  }, 3000);
+}
