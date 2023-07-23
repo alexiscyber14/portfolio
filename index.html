@@ -532,12 +532,10 @@ font-size: 18px;
       <button id="nextBtn"><i class="fa fa-angle-right"></i></button>
     </div>
     <button id="addTestimonialBtn">Add Testimonial</button>
-    <div id="testimonialForm">
+    <div id="testimonialForm" class="testimonialForm">
         <form>
-          <label for="name">Name:</label>
-          <input type="text" id="name" required>
-          <label for="testimonialText">Testimonial:</label>
-          <textarea id="testimonialText" rows="4" required></textarea>
+          <input type="text" id="name" placeholder="Your name" required>
+          <textarea id="testimonialText" placeholder="review" rows="4" required></textarea>
           <button type="button" onclick="saveTestimonial()">Submit</button>
         </form>
         <div id="pop" style="color: red;"></div>
@@ -599,20 +597,59 @@ font-family: 'Poppins', sans-serif;
 .slider-buttons button {
   margin: 0 10px;
   border: none;
-  box-shadow:2px 2px 4px rgb(225, 225, 225);
+  box-shadow:2px 2px 4px rgb(28, 28, 28);
   font-size: 20px;
   width: 40px;
 }
 #addTestimonialBtn{
 border: 1px solid black;
-background-color:white;  rgb(181, 4, 4);
+background-color:white; 
 padding: 1% 4%;
 font-family: 'Poppins', sans-serif;
 font-size: 14px;
 color: #323232;
 margin-bottom: 5%;
 }
-
+.testimonialForm form{
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+.testimonialForm form input{
+    margin-top: 4%;
+        border: none;
+        border-left: 4px solid  rgb(63, 2, 2);
+        padding: 2%;
+        outline: none;
+        border-radius: 0px;
+        background: #ededed;
+        width: 80%;
+        font-size: 16px;
+}
+.testimonialForm form textarea{
+    text-transform: capitalize;
+        margin-top: 4%;
+        padding: 2%;
+        background-color: #f7f7f7;
+        border-radius: 0px;
+        outline: none;
+        resize: none;
+        border: none;
+        border-left: 2px solid  rgb(63, 2, 2);
+        font-size: 16px; 
+}
+.testimonialForm form button{
+    width: 50%;
+        margin-left: 25%;
+        margin-top: 3%;
+        background-color:white; 
+        color:  rgb(95, 3, 3);
+        border:2px solid  rgb(95, 3, 3);
+        text-transform: capitalize;
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        padding: 1% 0%;
+}
   </style>
 <footer>
     <ul>
