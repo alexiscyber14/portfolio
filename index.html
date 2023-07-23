@@ -158,7 +158,7 @@ margin-right: 5px;
 background-color: transparent;
     }
     header nav .links-wrapper .menu button i{
-color: red; rgb(57, 57, 57);
+color: red;
     }
   </style>
 <section class="intro-section">
@@ -204,7 +204,6 @@ flex-direction: row;
 margin: 0;
 color: rgb(237, 237, 237);
 font-weight: bold;
-text-shadow:;
 font-size: 30px;
 letter-spacing: 4px;
         }
@@ -288,10 +287,70 @@ text-align: center;
   <div class="mid-head">
 <h2>most recent</h2>
 <h3></h3>
-  </div>  
+  </div> 
+  <p>With our diverse range of IT-related services, we aim to empower your business with cutting-edge technology solutions, allowing you to stay ahead in today's fast-paced digital landscape. Contact us now to explore how we can optimize your IT infrastructure and drive your business towards success.
+  </p> 
 <div class="mid-section-wrapper">
-<div>content</div>
-<div>image</div>
+<div>
+    <h3>Web Development</h3>
+    <img src="" alt="image">
+    <p>Our expert team of web developers crafts visually appealing, user-friendly, and responsive websites tailored to meet your business needs. Whether you require a simple informational site or a complex e-commerce platform, we leverage the latest technologies and industry best practices to ensure a seamless online presence for your brand.</p>
+    <a href="">view more</a>
+</div>
+<div>
+    <h3>Software Development</h3>
+    <img src="" alt="image">
+    <p>At our company, we specialize in developing custom software solutions that streamline your business processes, boost efficiency, and enhance productivity. From desktop applications to mobile apps, our skilled developers work closely with you to understand your requirements and deliver innovative and scalable software products.</p>
+    <a href="">view more</a>
+</div>
+<div>
+    <h3>IT Support and Maintenance</h3>
+    <img src="" alt="image">
+    <p>Minimize downtime and maximize productivity with our reliable IT support and maintenance services. Our dedicated team of professionals offers prompt assistance, troubleshooting, and regular system checks to keep your IT environment running smoothly.</p>
+    <a href="">view more</a>
+</div>
+<div>
+    <h3>IT Consultation</h3>
+    <img src="" alt="image">
+    <p>Our IT consultation services are designed to help your business navigate the ever-evolving technology landscape. We provide comprehensive assessments, strategic planning, and expert advice to align your IT infrastructure with your business objectives. Whether you need guidance on cybersecurity, cloud migration, or digital transformation, our experienced consultants are here to assist you.</p>
+    <a href="">view more</a>
+</div>
+<div>
+    <h3>Cybersecurity Solutions</h3>
+    <img src="" alt="image">
+    <p>Protecting your valuable digital assets is our priority. Our cybersecurity experts employ cutting-edge tools and methodologies to safeguard your systems from potential threats. From vulnerability assessments to implementing robust security measures, we ensure your data and networks remain secure and compliant with industry standards.</p>
+    <a href="">view more</a>
+</div>
+<div>
+    <h3>Pre-built Websites Update</h3>
+    <img src="" alt="image">
+    <p> If you already have a website but need updates or improvements, we've got you covered. Our team can enhance your existing website with the latest features and functionalities.</p>
+    <a href="">view more</a>
+</div>
+<div>
+    <h3>UI/UX Design</h3>
+    <img src="" alt="image">
+    <p>User experience is crucial to the success of any digital product. We focus on creating intuitive and engaging user interfaces that enhance customer satisfaction and drive conversions.</p>
+    <a href="">view more</a>
+</div>
+<div>
+    <h3>Social Media Management</h3>
+    <img src="" alt="image">
+    <p>Enhance your online presence and engagement with our social media management services. We handle content creation, posting, and community management to help you connect with your target audience effectively.</p>
+    <a href="">view more</a>
+</div>
+<div>
+    <h3>Digital Marketing</h3>
+    <img src="" alt="image">
+    <p>Our digital marketing services encompass a range of strategies to boost your online visibility, reach, and engagement. We employ various channels to promote your brand and drive growth.</p>
+    <a href="">view more</a>
+</div>
+<div>
+    <h3>SEO Design Integrations:</h3>
+    <img src="" alt="image">
+    <p> Search Engine Optimization (SEO) is crucial for improved website rankings. We integrate SEO best practices into your website design to enhance its visibility on search engines.</p>
+<a href="">view more</a>
+</div>
 </div>
 </section>
 <style>
@@ -320,13 +379,32 @@ text-align: center;
     }
     .mid-section .mid-section-wrapper{
 display: flex;
-flex-direction:column;
+flex-direction:row;
+flex-wrap: wrap;
 padding-top: 5%;
     }  .mid-section .mid-section-wrapper div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         width: 100%;
-        background-color:red;
-        height: 200px;
+        height: auto;
 
+    } .mid-section .mid-section-wrapper div h3{
+        font-family: 'Poppins', sans-serif;
+        text-transform: capitalize;
+        font-size: 25px;
+        color:#323232;
+        text-align: center;
+    }
+    .mid-section .mid-section-wrapper div img{
+        height: 100px;
+        width: 100px;
+        border: 3px solid grey;
+    }
+    .mid-section .mid-section-wrapper div p{
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        font-size: 15px;
     }
 </style>
 <section class="quote-section">
