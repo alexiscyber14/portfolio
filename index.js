@@ -48,3 +48,57 @@ const quote =()=>{
       });
   }
 quote();
+
+const reviews=()=>{
+    const addTestimonialBtn = document.getElementById('addTestimonialBtn');
+    const testimonialForm = document.getElementById('testimonialForm');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const slider = document.querySelector('.slider');
+    const testimonials = document.querySelectorAll('.testimonial');
+    let currentIndex = 0;
+    let intervalId = null; // Variable to hold the interval ID for auto-scrolling
+    const autoScrollDelay = 5000; // 5000ms = 5 seconds (change as needed)
+    
+    addTestimonialBtn.addEventListener('click', function() {
+      testimonialForm.classList.toggle('hidden');
+    });
+    
+    prevBtn.addEventListener('click', function() {
+      currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
+      updateSliderPosition();
+    });
+    
+    nextBtn.addEventListener('click', function() {
+      currentIndex = (currentIndex + 1) % testimonials.length;
+      updateSliderPosition();
+    });
+    
+    function updateSliderPosition() {
+      const position = -currentIndex * 100;
+      slider.style.transform = `translateX(${position}%)`;
+    }
+    
+    function updateTestimonials() {
+      currentIndex = testimonials.length - 1;
+      const sliderWidth = slider.clientWidth;
+      const testimonialWidth = sliderWidth / testimonials.length;
+      testimonials.forEach(testimonial => testimonial.style.width = `${testimonialWidth}px`);
+      updateSliderPosition();
+    }
+    function startAutoScrolling() {
+      intervalId = setInterval(() => {
+        currentIndex = (currentIndex + 1) % testimonials.length;
+        updateSliderPosition();
+      }, autoScrollDelay);
+    }
+    function stopAutoScrolling() {
+      clearInterval(intervalId);
+      intervalId = null;
+    }
+    startAutoScrolling();
+    slider.addEventListener('pointerdown', stopAutoScrolling);
+    slider.addEventListener('pointerup', startAutoScrolling);
+    slider.addEventListener('mouseleave', startAutoScrolling);
+}
+reviews();
