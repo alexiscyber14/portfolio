@@ -20,15 +20,15 @@
         <div class="links-wrapper">
             <div class="links">
             <ul>
-                <li><i class="fa fa-github"></i><a href="">software development</a></li>
-                <li><i class="fa fa-server"></i><a href="">Website development</a></li>
-                <li><i class="fa fa-arrow-up   "></i><a href="">Pre-built Websites update</a></li>
-                <li><i class="fa fa-pencil"></i><a href="">UI UX DESIGN</a></li>
-                <li><i class="fa fa-headphones"></i><a href="">I.T/ICT Support services</a></li>
-                <li><i class="fa fa-users"></i><a href="">Social Media management</a></li>
-                <li><i class="fa fa-cogs"></i><a href="">Digital Markting</a></li>
-                <li><i class="fa fa-bookmark"></i><a href="">SEO DESIGN INTERGRATIONS</a></li>
-                <li><i class="fa fa-phone"></i><a href="">Consultation</a></li>
+                <li class="side-call"><i class="fa fa-github"></i><a>software development</a></li>
+                <li class="side-call"><i class="fa fa-server"></i><a>Website development</a></li>
+                <li class="side-call"><i class="fa fa-arrow-up   "></i><a>Pre-built Websites update</a></li>
+                <li class="side-call"><i class="fa fa-pencil"></i><a>UI UX DESIGN</a></li>
+                <li class="side-call"><i class="fa fa-headphones"></i><a>I.T/ICT Support services</a></li>
+                <li class="side-call"><i class="fa fa-users"></i><a>Social Media management</a></li>
+                <li class="side-call"><i class="fa fa-cogs"></i><a>Digital Markting</a></li>
+                <li class="side-call"><i class="fa fa-bookmark"></i><a>SEO DESIGN INTERGRATIONS</a></li>
+                <li class="side-call"><i class="fa fa-phone"></i><a>Consultation</a></li>
             </ul>
             </div>
             <div class="menu">
@@ -37,9 +37,54 @@
         </div>
     </nav>
   </header>
+  <div class="slide-in">
+    <button class="close-slide-in">close</button>
+    <div class="content" data-button="1">Content for Button 1</div>
+    <div class="content" data-button="2">Content for Button 2</div>
+    <div class="content" data-button="3">Content for Button 3</div>
+    <div class="content" data-button="4">Content for Button 4</div>
+    <div class="content" data-button="5">Content for Button 5</div>
+    <div class="content" data-button="6">Content for Button 6</div>
+    <div class="content" data-button="7">Content for Button 7</div>
+    <div class="content" data-button="8">Content for Button 8</div>
+    <div class="content" data-button="9">Content for Button 9</div>
+  </div>
+
+  <style>
+
+    .slide-in{
+        background-color: red;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        z-index: 10;
+        left: 100%;
+        height:92.3vh ;
+    }.slide-in .content{
+        display: none;
+    }
+    .slide-in button{
+        width: 20%;
+        margin-top: 2%;
+    }
+  </style>
   <script>
+// Wrap the JavaScript code inside a DOMContentLoaded event listener
+// Wrap the JavaScript code inside a DOMContentLoaded event listener
+
+
+
+
+
+
+
+
 
   </script>
+
+
+
   <style>
     body{
         margin: 0;
@@ -67,7 +112,7 @@
         position:sticky;
         width: 100%;
         top: 0%;
-        z-index: 10;
+        z-index: 30;
         background-color:white; rgba(255, 255, 255, 0.92);
         box-shadow: 2px 2px 4px rgb(0, 0, 0);
     }header nav{
