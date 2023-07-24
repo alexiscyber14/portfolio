@@ -174,9 +174,16 @@ color: red;
 <h1>XERXIS TECHNOLOGIES</h1>
 <P>embrace the future with innovative tech solutions</P>
 <div class="vh-content">
-
+    <h3>tech stack</h3>
 </div>
-<a href=""><span>contact us</span></a>
+<div class="tech-stack">
+    <a href=""><img src="dev1.png" alt=""><span>java</span></a>
+    <a href=""><img src="dev1.png" alt=""><span>java</span></a>
+    <a href=""><img src="dev1.png" alt=""><span>java</span></a>
+    <a href=""><img src="dev1.png" alt=""><span>java</span></a>
+</div>
+<a href="" class="c-u"><span>contact us</span></a>
+
 </div>
 </section>
 <style>
@@ -215,7 +222,8 @@ flex-direction: row;
         }.intro-section .intro-content h1{
 margin: 0;
 color:rgb(47, 47, 47);
-font-weight: bold;
+font-weight:900;
+font-family: 'Poppins', sans-serif;
 font-size: 30px;
 letter-spacing: 4px;
         }
@@ -230,7 +238,32 @@ padding:1% 5%;
 border-left: 5px solid rgb(135, 135, 135);
 border-bottom-right-radius: 160px;
         }
-        .intro-section .intro-content a{
+
+        .intro-section .intro-content .tech-stack{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .intro-section .intro-content .tech-stack a{
+background-color: #dedede;
+display: flex;
+flex-direction: row;
+padding: 0.2% 2%;
+margin-right: 5px;
+margin-bottom: 5px;
+align-items: center;
+        }
+        .intro-section .intro-content .tech-stack a img{
+            width: 20px;
+        }
+        .intro-section .intro-content .tech-stack a span{
+            color: rgb(96, 96, 96);
+            text-transform: capitalize;
+            margin-left: 2px;
+            font-size: 15px;
+            
+        }
+        .intro-section .intro-content .c-u{
             color: rgb(255, 255, 255);
             padding: 1% 2%;
             text-align: center;
@@ -239,7 +272,7 @@ border-bottom-right-radius: 160px;
             width: 60%;
             text-transform: capitalize;
         }
-        .intro-section .intro-content a span {
+        .intro-section .intro-content .c-u span {
             background-color: rgb(205, 0, 0);
             padding: 0% 22%;
         }
