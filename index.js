@@ -208,3 +208,15 @@ const rightSlider =()=>{
 };
 rightSlider();
 })();
+
+
+
+
+
+// initializing a JavaScript object
+
+
+
+
+
+
