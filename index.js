@@ -200,7 +200,9 @@ const rightSlider =()=>{
     });
     closeSlideIn.addEventListener('click', function(){
     contentContainer.style.left='100%';
-    contentInside[index].style.display= 'none';
+    setTimeout(() => {
+      contentInside[index].style.display= 'none';
+    }, 1000);
 });
 });
 };

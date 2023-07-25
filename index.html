@@ -38,8 +38,32 @@
     </nav>
   </header>
   <div class="slide-in">
-    <button class="close-slide-in">close</button>
-    <div class="content" data-button="1">Content for Button 1</div>
+    <button class="close-slide-in"><i class="fa fa-angle-right"></i></button>
+    <div class="content" data-button="1">
+        <h2>Software development</h2>
+        <div class="in-content">
+            <div class="side-in-c">
+            <h3>Web Development</h3>
+            <img src="dev1.png" alt="image">
+            <p>Our expert team of web developers crafts visually appealing, user-friendly, and responsive websites tailored to meet your business needs. Whether you require a simple informational site or a complex e-commerce platform, we leverage the latest technologies and industry best practices to ensure a seamless online presence for your brand.</p>        
+        </div>
+        <div class="side-in-c">
+            <h3>Web Development</h3>
+            <img src="dev1.png" alt="image">
+            <p>Our expert team of web developers crafts visually appealing, user-friendly, and responsive websites tailored to meet your business needs. Whether you require a simple informational site or a complex e-commerce platform, we leverage the latest technologies and industry best practices to ensure a seamless online presence for your brand.</p>        
+        </div>
+        <div class="side-in-c">
+            <h3>Web Development</h3>
+            <img src="dev1.png" alt="image">
+            <p>Our expert team of web developers crafts visually appealing, user-friendly, and responsive websites tailored to meet your business needs. Whether you require a simple informational site or a complex e-commerce platform, we leverage the latest technologies and industry best practices to ensure a seamless online presence for your brand.</p>        
+        </div>
+        <div class="side-in-c">
+            <h3>Web Development</h3>
+            <img src="dev1.png" alt="image">
+            <p>Our expert team of web developers crafts visually appealing, user-friendly, and responsive websites tailored to meet your business needs. Whether you require a simple informational site or a complex e-commerce platform, we leverage the latest technologies and industry best practices to ensure a seamless online presence for your brand.</p>        
+        </div>
+        </div>
+    </div>
     <div class="content" data-button="2">Content for Button 2</div>
     <div class="content" data-button="3">Content for Button 3</div>
     <div class="content" data-button="4">Content for Button 4</div>
@@ -53,7 +77,7 @@
   <style>
 
     .slide-in{
-        background-color: red;
+        background-color:white;
         position: fixed;
         display: flex;
         flex-direction: column;
@@ -64,10 +88,56 @@
         height:100vh ;
     }.slide-in .content{
         display: none;
+        flex-direction: column;
+        background-color:white;
+        height: 96vh;
+        padding: 2%;
+        font-family: 'Poppins', sans-serif;
+        overflow: auto;
+    }
+    .slide-in .content h2{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-size: 25px;
+        margin-top: 0;
+        background:linear-gradient(to right, rgb(184, 0, 184),#3498db);
+        color: white;
+        text-transform: capitalize;
+    }
+    .slide-in .content .in-content{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .slide-in .content .in-content .side-in-c{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .slide-in .content .in-content .side-in-c h3{
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        
+    }
+    .slide-in .content .in-content .side-in-c img{
+        width: 50%;
+    }
+    .slide-in .content .in-content .side-in-c p{
+        width: 100%;
+        text-align: center;
     }
     .slide-in button{
-        width: 20%;
-        margin-top: 2%;
+        width: 20%;      
+        margin-top: 0%;
+        text-align: left;
+        font-size: 20px;
+        padding-left: 25px;
+        background: #f3f3f3;
+        border: none;
+        border-right: 2px solid rgb(35, 35, 35);  
     }
   </style>
     <style>
