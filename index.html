@@ -517,6 +517,18 @@
         font-weight: bold;
         border-right: 2px solid rgb(35, 35, 35);  
     }
+    .close-slide-in i.fa-angle-right {
+  animation: rockingAnimation 2s infinite; /* Adjust the animation duration as needed */
+}
+@keyframes rockingAnimation {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px); /* Adjust the value as needed */
+  }
+}
+
   </style>
     <style>
     body{
