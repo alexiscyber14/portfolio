@@ -41,28 +41,37 @@
     <button class="close-slide-in"><i class="fa fa-angle-right"></i></button>
     <div class="content" data-button="1">
         <h2>Software development</h2>
+        <p>In today's digital age, businesses thrive on innovation, efficiency, and a competitive edge. At xerxis technologies, we understand that every business is unique, and off-the-shelf software may not meet your specific needs. That's why we specialize in delivering tailor-made software solutions that streamline your operations, boost productivity, and elevate your business to new heights. Let's explore the benefits of custom software and the diverse types of software we can build to cater to your requirements.</p>
         <div class="in-content">
             <div class="side-in-c">
-            <h3>Web Development</h3>
+                <h3>Benefits of Custom Software:</h3>
             <img src="dev1.png" alt="image">
-            <p>Our expert team of web developers crafts visually appealing, user-friendly, and responsive websites tailored to meet your business needs. Whether you require a simple informational site or a complex e-commerce platform, we leverage the latest technologies and industry best practices to ensure a seamless online presence for your brand.</p>        
+            <p><span>Unparalleled Efficiency:</span><br> Off-the-shelf software might offer general functionality, but custom software is designed precisely to match your business processes. This ensures maximum efficiency as you eliminate unnecessary features and focus on what matters most.</p>
+        <p><span>Seamless Integration:</span><br> Our custom software seamlessly integrates with your existing systems, saving time and resources by reducing data duplication and manual workarounds. This leads to a more cohesive and productive technology ecosystem.</p>
+        <p><span>Scalability:</span><br> As your business grows, so do your software needs. Custom software can easily scale and adapt to accommodate your expanding operations without requiring significant changes or replacements.</p>
+        <p><span>Security:</span><br> Security is a top priority in the digital landscape. With custom software, you have more control over security measures, reducing the risk of potential vulnerabilities associated with third-party applications.</p>
+        <p><span>Competitive Advantage:</span><br> Stand out from the crowd with unique software that gives you a competitive edge. Tailored to your needs, your custom software can provide features that set you apart in the market and offer an unparalleled user experience to your customers.
+        </p>
         </div>
         <div class="side-in-c">
-            <h3>Web Development</h3>
+            <h3>Types of Software We Build:</h3>
             <img src="dev1.png" alt="image">
-            <p>Our expert team of web developers crafts visually appealing, user-friendly, and responsive websites tailored to meet your business needs. Whether you require a simple informational site or a complex e-commerce platform, we leverage the latest technologies and industry best practices to ensure a seamless online presence for your brand.</p>        
+            <p><span>Enterprise Resource Planning (ERP) Software:</span><br>
+            Streamline your business processes, enhance collaboration, and optimize resource management with our custom ERP solutions. From inventory and supply chain management to financials and human resources, our ERP software unifies your operations in one comprehensive platform.</p>
+       <p><span>Customer Relationship Management (CRM) Software:</span>
+        Build strong and lasting relationships with your customers through our CRM solutions. Manage leads, track interactions, and gain valuable insights into customer behavior to deliver personalized experiences and boost customer satisfaction.
+        </p>
+        <p><span>Web and Mobile Applications:</span><br>
+            Engage your target audience with intuitive and user-friendly web and mobile applications. From e-commerce platforms to custom business tools, we develop applications that are responsive, reliable, and visually appealing.</p>
+        <p><span>Business Intelligence (BI) and Analytics:</span><br>
+            Harness the power of data with our BI and analytics solutions. Make data-driven decisions, identify trends, and gain valuable insights into your business performance with our custom-built analytics tools.</p>
+        <p><span>Cloud-Based Solutions:</span><br>
+            Take advantage of the scalability and flexibility of cloud technology with our cloud-based software solutions. From cloud-based storage to Software-as-a-Service (SaaS) applications, we ensure secure and efficient access to your data from anywhere, anytime.</p>
         </div>
-        <div class="side-in-c">
-            <h3>Web Development</h3>
-            <img src="dev1.png" alt="image">
-            <p>Our expert team of web developers crafts visually appealing, user-friendly, and responsive websites tailored to meet your business needs. Whether you require a simple informational site or a complex e-commerce platform, we leverage the latest technologies and industry best practices to ensure a seamless online presence for your brand.</p>        
         </div>
-        <div class="side-in-c">
-            <h3>Web Development</h3>
-            <img src="dev1.png" alt="image">
-            <p>Our expert team of web developers crafts visually appealing, user-friendly, and responsive websites tailored to meet your business needs. Whether you require a simple informational site or a complex e-commerce platform, we leverage the latest technologies and industry best practices to ensure a seamless online presence for your brand.</p>        
-        </div>
-        </div>
+ <p>At <span class="pen">xerxis Technologies</span>, we believe that software should be an enabler, not a hindrance, to your business success. With our custom software solutions, you can experience the full potential of technology tailored to your unique requirements. Let us partner with you on your digital journey, and together, we'll transform your business into a more agile, productive, and competitive force in the market.
+<p class="press"><a href="">contact us</a></p>
+ </p>
     </div>
     <div class="content" data-button="2">Content for Button 2</div>
     <div class="content" data-button="3">Content for Button 3</div>
@@ -92,16 +101,41 @@
         background-color:white;
         height: 96vh;
         padding: 2%;
+        border-bottom: 4px solid rgb(41, 40, 39);
         font-family: 'Poppins', sans-serif;
         overflow: auto;
     }
     .slide-in .content h2{
         text-align: center;
         font-family: 'Poppins', sans-serif;
-        font-size: 25px;
+        font-size: 17px;
+        width: 80%;
         margin-top: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
         background:linear-gradient(to right, rgb(184, 0, 184),#3498db);
         color: white;
+        text-transform: capitalize;
+    }
+    .slide-in .content p{
+        text-align: center;
+    }
+    .slide-in .content p span{
+        text-transform: uppercase;
+        font-weight: bold;
+        color: black;
+    }
+    .slide-in .content .press{
+        width: 90%;
+        background-color: #3498db;
+        padding: 2% 4%;
+    }
+    .slide-in .content a{
+        color: white;
+        width: 100%;
+        padding: 1% 4%;
+        border-radius: 16px;
         text-transform: capitalize;
     }
     .slide-in .content .in-content{
@@ -129,6 +163,10 @@
         width: 100%;
         text-align: center;
     }
+    .slide-in .content .in-content .side-in-c p span{
+        font-weight: bold;
+        color: black;
+    }
     .slide-in button{
         width: 20%;      
         margin-top: 0%;
@@ -137,6 +175,7 @@
         padding-left: 25px;
         background: #f3f3f3;
         border: none;
+        font-weight: bold;
         border-right: 2px solid rgb(35, 35, 35);  
     }
   </style>
