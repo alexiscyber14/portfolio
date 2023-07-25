@@ -2,8 +2,8 @@
     "name": "decode xerxis technologies",
     "short_name": "decode xerxis technologies",
     "start_url": ".",
-    "background_color": "#6dcdb1",
-    "theme_color": "#009578",
+    "background_color": "#f2f2f2",
+    "theme_color": "#f2f2f2",
     "display": "standalone",
     "icons" : [
         {
