@@ -8,8 +8,6 @@ if( "serviceWorker" in navigator){
   })
 }
 
-
-
 const headerMenu =()=>{
   const menuBar = document.querySelector('.fa-bars');
   const menuUl = document.querySelector('.links')
