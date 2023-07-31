@@ -136,8 +136,9 @@ function saveTestimonial() {
 
 
 //portfolio projects sliders
+/*
 (function() {
-const projects=()=>{
+const pojects=()=>{
   const prevBtn = document.getElementById('prevBtna');
   const nextBtn = document.getElementById('nextBtna');
   const slider = document.querySelector('.slidert');
@@ -186,7 +187,7 @@ const projects=()=>{
 }
 projects();
 })();
-
+*/
 
 //slidr of content js
 (function() {

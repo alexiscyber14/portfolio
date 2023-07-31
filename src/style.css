@@ -309,7 +309,18 @@ header nav .links-wrapper .menu button i {
   margin-bottom: 10px;
   font-size: 20px;
 }
-
+.intro-section .icons .active-web{
+  color:red;
+  animation: rotateInfinite 6s linear infinite;
+}
+@keyframes rotateInfinite {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .intro-section .intro-content {
   display: flex;
   flex-direction: column;
@@ -911,4 +922,469 @@ footer ul li {
 
 footer ul li a {
   color: #fff;
+}
+@media screen and (min-width: 800px) {
+  .mid-section .mid-section-wrapper div {
+    width: 47%;
+    margin: 1%;border: 2px solid #f3f3f3;
+  }
+  .mid-section .mid-section-wrapper div p{
+    padding: 2%;
+    font-size: 18px;
+  } 
+
+  header {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 3%;
+    position: sticky;
+    width: 100%;
+    top: 0%;
+    z-index: 30;
+    background-color: white;
+    box-shadow: 2px 2px 4px rgb(111, 111, 111);
+  }
+  
+  /* intro section css */
+.intro-section {
+  background-size: 10%;
+  padding-top: 1%;
+}
+
+.intro-section .icons {
+  display: flex;
+  padding: 1%;
+  border-radius: 16px;
+  border: 1px solid rgb(56, 56, 56);
+  flex-direction: column;
+}
+
+.intro-section .icons a {
+  color: black;
+  justify-content: space-around;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  transition: transform 0.3s ease;
+
+}
+.intro-section .icons a:hover{
+  color: red;
+  transform: scale(1.5);
+
+}
+
+.intro-section .intro-content {
+  padding-top: 1%;
+}
+.intro-section .intro-content h1 {
+  padding-top: 10%;
+  font-family:arial;
+  font-size: 55px;
+  letter-spacing: 10px;
+}
+
+.intro-section .intro-content h3 {
+  font-size: 10px;
+}
+
+.intro-section .intro-content p {
+  font-size: 19px;
+  letter-spacing: 5px;
+  padding: 1% 2%;
+}
+
+.intro-section .intro-content .tech-stack a img {
+  width: 16px;
+}
+
+.intro-section .intro-content .tech-stack a span {
+  font-size: 12px;
+}
+.intro-section .intro-content .c-u {
+  color: rgb(255, 255, 255);
+  padding: 1% 2%;
+  text-align: center;
+  border: 0;
+  margin-top: 4%;
+  margin-bottom: 2%;
+  width: 60%;
+  text-transform: capitalize;
+}
+
+.intro-section .intro-content .c-u span {
+  background-color: rgb(205, 0, 0);
+  padding: 1% 22%;
+  border-radius: 1px;
+}
+.intro-section .intro-content .c-u:hover{
+  transition: transform 0.3s ease;
+ transform: scale(1.1);
+}
+
+.act {
+  background: linear-gradient(to bottom, #f3f3f3, white, white, white);
+/*display: flex;
+flex-direction: row;*/
+}
+
+.w-d-w {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  background-color: #3498db;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.w-d-w div {
+  width: 50%;
+}
+
+.mid-section .w-d-p {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  color: #f3f3f3;
+  padding: 1%;
+  font-size: 16px;
+}
+
+.w-d-w-c h4{
+  font-size: 35px;
+  color: white;
+}
+
+.w-w-d img {
+  width: 80%;
+  padding: 1%;
+  float: right;
+  border: 2px solid rgb(190, 189, 189);
+}
+
+
+
+  
+
+
+/* portfolio projects css */
+
+.testimonialz {
+  text-align: center;
+  overflow: hidden;
+  background-color: white;
+  margin-top: -1px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.testimonialz h3 {
+  font-family: 'Poppins', sans-serif;
+  text-transform: capitalize;
+  text-align: center;
+  padding: 2%;
+  margin: 0;
+  color: #484848;
+  font-size: 25px;
+}
+
+.slidert {
+  display: flex;
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.testimoniala {
+  flex: 0 0 30.5%; /* Each testimonial takes the full width of the slider initially */
+  padding: 20px;
+  margin: 2%;
+  background-color: #f4f4f4;
+  font-size: 18px;
+  border-radius: 0;
+  border: 1px solid rgb(222, 222, 222);
+  display: flex;
+  flex-direction: column;
+}
+
+.testimoniala img {
+  width: 100%;
+  height: auto;
+}
+
+.testimoniala p {
+  margin: 0;
+  border-top: 1px solid grey;
+  padding-top: 1%;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.slider-buttonz {
+  margin: 0;
+  margin-top: 10px;
+  padding-bottom: 5%;
+}
+
+.slider-buttonz button {
+  margin: 0 10px;
+  border: 1px solid grey;
+  box-shadow: 2px 2px 4px rgb(235, 235, 235);
+  background-color: #fff;
+  font-size: 20px;
+  width: 40px;
+}
+
+
+  
+    /* form css */
+.contact .edge form input {
+  margin-top: 0.5%;
+  padding: 1%;
+  width: 80%;
+}
+.contact .edge form textarea {
+  margin-top: 1%;
+  padding: 0.3%;
+}
+
+.contact .edge form button {
+  width: 30%;
+  margin-top: 2%;
+  padding: 1% 0%;
+
+}
+}
+
+@media screen and (min-width: 1000px) {
+
+  header {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 3%;
+    position: sticky;
+    width: 100%;
+    top: 0%;
+    z-index: 30;
+    background-color: white;
+    box-shadow: 2px 2px 4px rgb(111, 111, 111);
+  }
+  
+  /* intro section css */
+.intro-section {
+  background-size: 10%;
+  padding-top: 1%;
+}
+
+.intro-section .icons {
+  display: flex;
+  padding: 1%;
+  border-radius: 16px;
+  border: 1px solid rgb(56, 56, 56);
+  flex-direction: column;
+}
+
+.intro-section .icons a {
+  color: black;
+  justify-content: space-around;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  transition: transform 0.3s ease;
+
+}
+.intro-section .icons a:hover{
+  color: red;
+  transform: scale(1.5);
+
+}
+
+.intro-section .intro-content {
+  padding-top: 1%;
+}
+.intro-section .intro-content h1 {
+  padding-top: 10%;
+  font-family:arial;
+  font-size: 55px;
+  letter-spacing: 10px;
+}
+
+.intro-section .intro-content h3 {
+  font-size: 10px;
+}
+
+.intro-section .intro-content p {
+  font-size: 19px;
+  letter-spacing: 5px;
+  padding: 1% 2%;
+}
+
+.intro-section .intro-content .tech-stack a img {
+  width: 16px;
+}
+
+.intro-section .intro-content .tech-stack a span {
+  font-size: 12px;
+}
+.intro-section .intro-content .c-u {
+  color: rgb(255, 255, 255);
+  padding: 1% 2%;
+  text-align: center;
+  border: 0;
+  margin-top: 4%;
+  margin-bottom: 2%;
+  width: 60%;
+  text-transform: capitalize;
+}
+
+.intro-section .intro-content .c-u span {
+  background-color: rgb(205, 0, 0);
+  padding: 1% 22%;
+  border-radius: 1px;
+}
+.intro-section .intro-content .c-u:hover{
+  transition: transform 0.3s ease;
+ transform: scale(1.1);
+}
+
+.act {
+  background: linear-gradient(to bottom, #f3f3f3, white, white, white);
+/*display: flex;
+flex-direction: row;*/
+}
+
+.w-d-w {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  background-color: #3498db;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.w-d-w div {
+  width: 50%;
+}
+
+.mid-section .w-d-p {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  color: #f3f3f3;
+  padding: 1%;
+  font-size: 20px;
+}
+
+.w-d-w-c h4{
+  font-size: 35px;
+  color: white;
+}
+
+.w-w-d img {
+  width: 70%;
+  padding: 1%;
+  float: right;
+  border: 2px solid rgb(190, 189, 189);
+}
+
+
+.mid-section .mid-section-wrapper div {
+  width:30.333333%;
+  padding-bottom: 1%;
+  margin: 1%;border: 2px solid #f3f3f3;
+}
+.mid-section .mid-section-wrapper div p{
+  padding: 2%;
+  font-size: 18px;
+} 
+  
+
+
+/* portfolio projects css */
+
+.testimonialz {
+  text-align: center;
+  overflow: hidden;
+  background-color: white;
+  margin-top: -1px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.testimonialz h3 {
+  font-family: 'Poppins', sans-serif;
+  text-transform: capitalize;
+  text-align: center;
+  padding: 2%;
+  margin: 0;
+  color: #484848;
+  font-size: 25px;
+}
+
+.slidert {
+  display: flex;
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.testimoniala {
+  flex: 0 0 30.5%; /* Each testimonial takes the full width of the slider initially */
+  padding: 20px;
+  margin: 2%;
+  background-color: #f4f4f4;
+  font-size: 18px;
+  border-radius: 0;
+  border: 1px solid rgb(222, 222, 222);
+  display: flex;
+  flex-direction: column;
+}
+
+.testimoniala img {
+  width: 100%;
+  height: auto;
+}
+
+.testimoniala p {
+  margin: 0;
+  border-top: 1px solid grey;
+  padding-top: 1%;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.slider-buttonz {
+  margin: 0;
+  margin-top: 10px;
+  padding-bottom: 5%;
+}
+
+.slider-buttonz button {
+  margin: 0 10px;
+  border: 1px solid grey;
+  box-shadow: 2px 2px 4px rgb(235, 235, 235);
+  background-color: #fff;
+  font-size: 20px;
+  width: 40px;
+}
+
+  /* form css */
+.contact .edge form input {
+  margin-top: 0.5%;
+  padding: 1%;
+  width: 80%;
+}
+.contact .edge form textarea {
+  margin-top: 1%;
+  padding: 0.3%;
+}
+
+.contact .edge form button {
+  width: 30%;
+  margin-top: 2%;
+  padding: 1% 0%;
+
+}
 }
