@@ -491,9 +491,16 @@ header nav .links-wrapper .menu button i {
 
 .slidert {
   display: flex;
+  flex-direction: row;
+  overflow: auto;
   width: 100%;
   transition: transform 0.5s ease;
 }
+  /* Hide the scrollbar for webkit-based browsers */
+  .slidert::-webkit-scrollbar {
+    display: none;
+  }
+
 
 .testimoniala {
   flex: 0 0 84.5%; /* Each testimonial takes the full width of the slider initially */
@@ -1310,15 +1317,15 @@ flex-direction: row;*/
   overflow: hidden;
   background-color: white;
   margin-top: -1px;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 0%;
+  padding-bottom: 0%;
 }
 
 .testimonialz h3 {
   font-family: 'Poppins', sans-serif;
   text-transform: capitalize;
   text-align: center;
-  padding: 2%;
+  padding: 0%;
   margin: 0;
   color: #484848;
   font-size: 25px;
@@ -1331,7 +1338,7 @@ flex-direction: row;*/
 }
 
 .testimoniala {
-  flex: 0 0 30.5%; /* Each testimonial takes the full width of the slider initially */
+  fle:30.5%; /* Each testimonial takes the full width of the slider initially */
   padding: 20px;
   margin: 2%;
   background-color: #f4f4f4;

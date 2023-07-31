@@ -1,4 +1,4 @@
-if( "serviceWorker" in navigator){
+/*if( "serviceWorker" in navigator){
   navigator.serviceWorker.register("sw.js").then(registration=>{
     console.log("sw registered");
     console.log(registration)
@@ -7,7 +7,7 @@ if( "serviceWorker" in navigator){
     console.log(error);
   })
 }
-
+*/
 const headerMenu =()=>{
   const menuBar = document.querySelector('.fa-bars');
   const menuUl = document.querySelector('.links')
@@ -59,7 +59,10 @@ const quote =()=>{
   }
 quote();
 
-//testimonial slider js
+
+
+
+
 const reviews=()=>{
     const addTestimonialBtn = document.getElementById('addTestimonialBtn');
     const testimonialForm = document.getElementById('testimonialForm');
@@ -114,7 +117,6 @@ const reviews=()=>{
 }
 reviews();
 
-
 function saveTestimonial() {
   const name = document.getElementById('name').value;
   const testimonialText = document.getElementById('testimonialText').value;
@@ -133,62 +135,6 @@ function saveTestimonial() {
     testimonialForm.classList.toggle('hidden');
   }, 3000);
 }
-
-
-//portfolio projects sliders
-/*
-(function() {
-const pojects=()=>{
-  const prevBtn = document.getElementById('prevBtna');
-  const nextBtn = document.getElementById('nextBtna');
-  const slider = document.querySelector('.slidert');
-  const testimonials = document.querySelectorAll('.testimoniala');
-  let currentIndex = 0;
-  let intervalId = null; // Variable to hold the interval ID for auto-scrolling
-  const autoScrollDelay = 5000; // 5000ms = 5 seconds (change as needed)
-
-  
-  prevBtn.addEventListener('click', function() {
-    currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
-    updateSliderPosition();
-  });
-  
-  nextBtn.addEventListener('click', function() {
-    currentIndex = (currentIndex + 1) % testimonials.length;
-    updateSliderPosition();
-  });
-  
-  function updateSliderPosition() {
-    const position = -currentIndex * 100;
-    slider.style.transform = `translateX(${position}%)`;
-  }
-  
-  function updateTestimonials() {
-    currentIndex = testimonials.length - 1;
-    const sliderWidth = slider.clientWidth;
-    const testimonialWidth = sliderWidth / testimonials.length;
-    testimonials.forEach(testimonial => testimonial.style.width = `${testimonialWidth}px`);
-    updateSliderPosition();
-  }
-  function startAutoScrolling() {
-    intervalId = setInterval(() => {
-      currentIndex = (currentIndex + 1) % testimonials.length;
-      updateSliderPosition();
-    }, autoScrollDelay);
-  }
-  function stopAutoScrolling() {
-    clearInterval(intervalId);
-    intervalId = null;
-  }
-  startAutoScrolling();
-  slider.addEventListener('pointerdown', stopAutoScrolling);
-  slider.addEventListener('pointerup', startAutoScrolling);
-  slider.addEventListener('mouseleave', startAutoScrolling);
-}
-projects();
-})();
-*/
-
 //slidr of content js
 (function() {
 const rightSlider =()=>{
@@ -230,4 +176,38 @@ rightSlider();
 
 
 
+
+
+
+
+(function() {
+  const projects = () => {
+    const slider = document.querySelector('.slidert');
+    const prevBtn = document.getElementById('prevBtna');
+    const nextBtn = document.getElementById('nextBtna');
+    const scrollAmount =360; // Change this value to adjust the scroll amount in pixels
+
+    function scrollToLeft() {
+      slider.scrollBy({
+        left: -scrollAmount,
+        behavior: 'smooth',
+      });
+    }
+
+    function scrollToRight() {
+      slider.scrollBy({
+        left: scrollAmount,
+        behavior: 'smooth',
+      });
+    }
+
+    // Click event listeners for the buttons
+    if (prevBtn && nextBtn) {
+      prevBtn.addEventListener('click', scrollToLeft);
+      nextBtn.addEventListener('click', scrollToRight);
+    }
+  };
+
+  projects();
+})();
 
