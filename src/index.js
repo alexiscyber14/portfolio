@@ -48,7 +48,6 @@ const quote =()=>{
             service7: '$4000 - $20,000',
             service8: '$500 - $5000',
             service9: '$50.00 - $200',
-            service10: '$200 - $5000',
           };
           const quoteResult = document.getElementById('quoteResult');
           quoteResult.textContent = `${priceRanges[selectedService]}`;
