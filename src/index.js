@@ -45,10 +45,9 @@ const quote =()=>{
             service3: '$500 - $50,000',
             service4: '$1000 - $10,000',
             service5: '$100 - $200',
-            service6: '$900 - $20,000',
             service7: '$4000 - $20,000',
             service8: '$500 - $5000',
-            service9: '$0.00 - $200',
+            service9: '$50.00 - $200',
             service10: '$200 - $5000',
           };
           const quoteResult = document.getElementById('quoteResult');
