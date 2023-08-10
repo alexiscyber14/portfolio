@@ -68,8 +68,7 @@ header nav .logo h2 {
   margin: 0;
   text-transform: uppercase;
   font-weight: bold;
-  color: rgb(215, 0, 0);
-  border-left: 5px solid rgb(215, 0, 0);
+  color: rgb(3, 21, 13);
   font-size: 25px;
   margin-left: 5px;
   padding-left: -8px;
@@ -150,7 +149,7 @@ header nav .links-wrapper .menu button {
 }
 
 header nav .links-wrapper .menu button i {
-  color: red;
+  color:black;
 }
 
 /* side navs cc */
@@ -283,7 +282,7 @@ header nav .links-wrapper .menu button i {
   display: flex;
   height: auto;
   padding: 2%;
-  background-color: #f3f3f3;
+  background-color:white;
   margin-top: 0%;
   background-image: url('../images/Vec.png');
   background-size: 15%;
@@ -310,7 +309,7 @@ header nav .links-wrapper .menu button i {
   font-size: 20px;
 }
 .intro-section .icons .active-web{
-  color:red;
+  color:#396DF2;
   animation: rotateInfinite 6s linear infinite;
 }
 @keyframes rotateInfinite {
@@ -392,8 +391,7 @@ header nav .links-wrapper .menu button i {
 
 .intro-section .intro-content .c-u {
   color: rgb(255, 255, 255);
-  padding: 1% 2%;
-  text-align: center;
+  padding: 1% 0%;
   border: 0;
   margin-top: 4%;
   margin-bottom: 2%;
@@ -402,9 +400,9 @@ header nav .links-wrapper .menu button i {
 }
 
 .intro-section .intro-content .c-u span {
-  background-color: rgb(205, 0, 0);
-  padding: 0% 15%;
-  border-radius: 16px;
+  background-color:#396DF2;
+  padding: 0.3% 15%;
+  border-radius: 6px;
 }
 
 /* what we doo css */
@@ -567,6 +565,7 @@ header nav .links-wrapper .menu button i {
   text-align: center;
   margin: 0;
   font-size: 25px;
+  text-transform: uppercase;
 }
 
 .mid-section .mid-head {
@@ -931,6 +930,9 @@ footer ul li a {
   color: #fff;
 }
 @media screen and (min-width: 800px) {
+  .max-links{
+    display:none;
+  }
   .mid-section .mid-section-wrapper div {
     width: 47%;
     margin: 1%;border: 2px solid #f3f3f3;
@@ -1010,8 +1012,7 @@ footer ul li a {
 }
 .intro-section .intro-content .c-u {
   color: rgb(255, 255, 255);
-  padding: 1% 2%;
-  text-align: center;
+  padding: 1% 0%;
   border: 0;
   margin-top: 4%;
   margin-bottom: 2%;
@@ -1020,9 +1021,8 @@ footer ul li a {
 }
 
 .intro-section .intro-content .c-u span {
-  background-color: rgb(205, 0, 0);
   padding: 1% 22%;
-  border-radius: 1px;
+  border-radius: 6px;
 }
 .intro-section .intro-content .c-u:hover{
   transition: transform 0.3s ease;
@@ -1042,7 +1042,7 @@ flex-direction: row;*/
   flex-wrap: wrap;
   padding-top: 3px;
   padding-bottom: 3px;
-  background-color: #3498db;
+  background-color:white; #3498db;
   justify-content: space-around;
   align-items: center;
 }
@@ -1054,18 +1054,18 @@ flex-direction: row;*/
 .mid-section .w-d-p {
   font-family: 'Poppins', sans-serif;
   text-align: center;
-  color: #f3f3f3;
+  color: #181717;
   padding: 1%;
   font-size: 16px;
 }
 
 .w-d-w-c h4{
   font-size: 35px;
-  color: white;
+  color: rgb(62, 61, 61);
 }
 
 .w-w-d img {
-  width: 80%;
+  width: 89%;
   padding: 1%;
   float: right;
   border: 2px solid rgb(190, 189, 189);
@@ -1104,7 +1104,7 @@ flex-direction: row;*/
 }
 
 .testimoniala {
-  flex: 0 0 30.5%; /* Each testimonial takes the full width of the slider initially */
+  flex: 0 0 40.5%; /* Each testimonial takes the full width of the slider initially */
   padding: 20px;
   margin: 2%;
   background-color: #f4f4f4;
@@ -1165,7 +1165,12 @@ flex-direction: row;*/
 }
 
 @media screen and (min-width: 1000px) {
-
+  .max-links{
+    display:block;
+  }
+  header nav .links-wrapper .menu {
+    display: none;
+  }
   header {
     display: flex;
     flex-direction: row;
@@ -1236,8 +1241,7 @@ flex-direction: row;*/
 }
 .intro-section .intro-content .c-u {
   color: rgb(255, 255, 255);
-  padding: 1% 2%;
-  text-align: center;
+  padding: 1% 0%;
   border: 0;
   margin-top: 4%;
   margin-bottom: 2%;
@@ -1246,7 +1250,6 @@ flex-direction: row;*/
 }
 
 .intro-section .intro-content .c-u span {
-  background-color: rgb(205, 0, 0);
   padding: 1% 22%;
   border-radius: 1px;
 }
@@ -1268,7 +1271,7 @@ flex-direction: row;*/
   flex-wrap: wrap;
   padding-top: 3px;
   padding-bottom: 3px;
-  background-color: #3498db;
+  background-color:white;
   justify-content: space-around;
   align-items: center;
 }
@@ -1280,14 +1283,14 @@ flex-direction: row;*/
 .mid-section .w-d-p {
   font-family: 'Poppins', sans-serif;
   text-align: center;
-  color: #f3f3f3;
+  color: #313030;
   padding: 1%;
   font-size: 20px;
 }
 
 .w-d-w-c h4{
   font-size: 35px;
-  color: white;
+  color: rgb(59, 58, 58);
 }
 
 .w-w-d img {
