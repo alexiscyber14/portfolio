@@ -15,7 +15,9 @@ input[type="tel"],
 input[type="password"] {
   font-size: 16px;
 }
-
+.max-links{
+  display:none;
+}
 body {
   margin: 0;
   background-image: url('../images/er.jpg');
