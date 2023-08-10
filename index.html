@@ -58,6 +58,19 @@
             margin-top: 4px;
             align-items: center;
         }
+        ul::-webkit-scrollbar {
+
+    height: 5px;/* Width of the scrollbar */
+}
+
+ ul::-webkit-scrollbar-thumb {
+    background-color: #919191; /* Color of the scrollbar thumb */
+    border-radius: 4px; /* Border radius of the thumb */
+}
+
+ul::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Color of the scrollbar track */
+}
         .max-links ul{
             display: inline-flex;
             overflow:auto;
@@ -74,12 +87,13 @@
             width:100%;
             border: 1px solid grey;
             background:white;
-            font-size: 15px;
+            font-size: 14px;
             white-space: nowrap;
             text-transform: capitalize;
             color: rgb(41, 41, 41);
             font-family: 'Poppins', sans-serif;
             margin-left: 10px;
+            margin-bottom: 10px;
             padding: 0px 4%;
             border-radius: 16px;
         }
